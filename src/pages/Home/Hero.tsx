@@ -36,6 +36,7 @@ export const Hero: FC<HeroProps> = () => {
   const handleBtnClick = (value: string) => {
     setSelectedBtn(value);
   };
+  
   const calculateTimeLeft = (): Timing => {
     const difference = +new Date("2024-07-05") - +new Date();
     let timing = {};

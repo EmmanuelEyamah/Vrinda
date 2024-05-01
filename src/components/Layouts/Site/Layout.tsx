@@ -2,6 +2,7 @@ import { FC } from "react";
 import { SiteNavbar } from "./Navbar";
 import { SiteFooter } from "./Footer";
 import { Outlet } from "react-router-dom";
+import { NewsLetter } from "../../Ui/NewsLetter/NewsLetter";
 
 export interface SiteLayoutProps {}
 export const SiteLayout: FC<SiteLayoutProps> = () => {
@@ -14,6 +15,7 @@ export const SiteLayout: FC<SiteLayoutProps> = () => {
                 <Outlet />
             </div>
         </div>
+        <NewsLetter />
         <SiteFooter />
     </div>
   );
