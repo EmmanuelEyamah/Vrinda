@@ -3,6 +3,7 @@ import Breadcrumb from "../../components/Ui/svg/breadcrumb";
 import { Typography } from "@material-tailwind/react";
 import { AppButton } from "../../components/Ui/Button/Button";
 import { MessageFilled } from "@ant-design/icons";
+import { NavLink } from "react-router-dom";
 
 export interface MoreQAProps {}
 export const MoreQA: FC<MoreQAProps> = () => {
@@ -17,9 +18,14 @@ export const MoreQA: FC<MoreQAProps> = () => {
             <Typography className="text-sm font-normal lg:text-[16px] mb-1 lg:mb-4 text-[rgba(58, 58, 58, 0.7)] leading-[24px] text-center">
                 Can’t find the answer you’re looking for? Please chat to our friendly team.
             </Typography>
-                <AppButton size="lg" variant="secondary" icon={<MessageFilled />}>
-                  GET IN TOUCH
-                </AppButton>
+            <NavLink
+              to={"/contact-us"}
+            >
+              
+            <AppButton size="lg" variant="secondary" icon={<MessageFilled />}>
+              GET IN TOUCH
+            </AppButton>
+            </NavLink>
         </div>
     </div>
   );

@@ -91,7 +91,7 @@ function NavList() {
                     className="p-1 font-normal"
                     key={`link-tag-${index}`}
                 >
-                     {link.dropdown ? ( // Check if the link has a dropdown
+                     {link.dropdown ? ( 
                         <DropdownLink link={link} isActive={isActive} />
                       ) : (
                         <NavLink
@@ -139,7 +139,7 @@ const DropdownLink: FC<DropdownLinkProps> = ({ link, isActive }) => {
   return (
     <div>
       <div
-        className={`py-2 pr-4 flex gap-1 items-center ${isActive ? 'gradient-text' : 'text-[#3A3A3A]'}`}
+        className={`py-2 pr-4 flex gap-1 items-center z-100 ${isActive ? 'gradient-text' : 'text-[#3A3A3A]'}`}
         onClick={toggleDropdown}
       >
         <label>{link.label}</label>
