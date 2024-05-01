@@ -24,7 +24,8 @@ const Links = [
   },
   {
     label: "Tokenomics",
-    route: "#tokenomics",
+    route: "/#tokenomics",
+    scrollTarget: "#tokenomics",
     dropdown: null,
   },
   {
@@ -45,7 +46,8 @@ const Links = [
   },
   {
     label: "Road map",
-    route: "#roadmap",
+    route: "/#roadmap",
+    scrollTarget: "#roadmap",
     dropdown: null,
   },
 ];
@@ -92,9 +94,25 @@ function NavList() {
                      {link.dropdown ? ( // Check if the link has a dropdown
                         <DropdownLink link={link} isActive={isActive} />
                       ) : (
-                        <NavLink to={link.route} className="flex items-center">
-                          <NavItems label={link.label} active={isActive} />
-                        </NavLink>
+                        <NavLink
+                        to={link.route}
+                        className="flex items-center"
+                        onClick={() => {
+                          if (link.scrollTarget) {
+                            const targetElement = document.querySelector(
+                              link.scrollTarget
+                            );
+                            if (targetElement) {
+                              targetElement.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start",
+                              });
+                            }
+                          }
+                        }}
+                      >
+                        <NavItems label={link.label} active={isActive} />
+                      </NavLink>
                       )}
                 </Typography>
             )
@@ -148,7 +166,23 @@ export interface SiteNavbarProps {}
 export const SiteNavbar: FC<SiteNavbarProps> = () => {
 
   const [openNav, setOpenNav] = useState(false);
- 
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   useEffect(() => {
     window.addEventListener(
       "resize",
@@ -162,7 +196,11 @@ export const SiteNavbar: FC<SiteNavbarProps> = () => {
         <Typography variant="h6" className="text-white">VRANDA is now live!</Typography>
         <AppButton variant="accent" size="sm">Get involved</AppButton>
       </div>
-      <Navbar className="mx-auto max-w-full px-20 py-2">
+      <Navbar
+        className={`mx-auto max-w-full px-20 py-2 ${
+          isSticky ? "sticky top-0 bg-white shadow-lg z-50" : ""
+        }`}
+      >
         <div className="flex items-center justify-between text-blue-gray-900">
             <LogoIcon />
           <div className="hidden lg:block">

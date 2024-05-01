@@ -10,7 +10,7 @@ export interface RoadmapProps {}
 export const Roadmap: FC<RoadmapProps> = () => {
 
   return (
-    <div className="w-full h-[1000px] flex flex-col items-center justify-start relative gap-5">
+    <div className="w-full h-[1000px] flex flex-col items-center justify-center relative gap-5" id="roadmap">
          <Typography
             className="text-sm font-bold lg:text-[28px] text-[#3754FF] leading-[36px] w-[198px]"
         >
