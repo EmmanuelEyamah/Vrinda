@@ -66,57 +66,57 @@ export const Hero: FC<HeroProps> = () => {
 
   return (
     <div className="relative mx-auto lg:min-h-[1300px] container">
-      <div className="absolute top-0 right-[50%]">
+      <div className="absolute top-0 right-[50%] hidden lg:block">
         <StarIcon />
       </div>
-      <div className="absolute top-[50px] right-[50%]">
+      <div className="absolute top-[50px] right-[50%] hidden lg:block ">
         <StLineIcon />
       </div>
-      <div className="absolute top-[10%] right-[60%]">
+      <div className="absolute top-[10%] right-[60%] hidden lg:block ">
         <StLineIIIcon />
       </div>
-      <div className="absolute top-[-15px] right-[12px] z-[1000]">
+      <div className="absolute top-[0px] right-[-60px] z-[100] hidden lg:block ">
         <EthIcon />
       </div>
-      <div className="absolute lg:bottom-[350px] lg:right-[580px] z-30" >
+      <div className="absolute lg:bottom-[350px] lg:right-[580px] z-30 hidden lg:block " >
         <BitCoinIcon />
       </div>
-      <div className="absolute lg:bottom-[500px] lg:left-[150px]">
+      <div className="absolute lg:bottom-[400px] lg:left-[50px] hidden lg:block ">
         <EthIcon />
       </div>
-      <div className="flex-col items-start justify-center lg:flex lg:flex-row gap-32 px-5 pt-[100px]">
+      <div className="pt-20 flex-col items-center justify-center lg:flex lg:flex-row gap-32 lg:px-5 lg:pt-[100px]">
           <div className="flex-col w-full lg:w-1/2 items-center justify-center gap-4">
             <Typography 
-                className="text-4xl font-bold md:text-[50px] lg:text-[58px] mb-1 lg:mb-4 text-[#3A3A3A] w-[759px] leading-[79px]"
+                className="font-bold text-center w-[371px] lg:text-left text-[38px] lg:text-[58px] mb-1 lg:mb-4 text-[#3A3A3A] lg:w-[759px] leading-[47px] lg:leading-[79px]"
             >
                 Welcome to the future of cryptocurrency with Vrinda Coin!
             </Typography>
             <Typography 
-                className="text-2xl lg:text-[48px] mb-1 lg:mb-4 text-[#3754FF] leading-[47px] font-normal"
+                className="text-center text-[28px]  lg:text-left lg:text-[48px] mb-1 lg:mb-4 text-[#3754FF] leading-[36px] lg:leading-[47px] font-normal"
             >
                 Crypto and Airdrops
             </Typography>
             <Typography 
-                className="text-xl font-normal lg:text-[21px] mb-1 lg:mb-4 text-[#3A3A3A] w-[444px] leading-[34px]"
+                className="text-[16px] text-center lg:text-left font-normal lg:text-[21px] mb-1 lg:mb-4 text-[#3A3A3A] lg:w-[444px]  w-[367px] leading-[24px] lg:leading-[34px]"
             >
                 Discover the power of cryptocurrencies and blockchain technology
             </Typography>
-            <Space className="mt-10">
-              <div className="w-[350px]">
+            <Space className="mt-10 items-center justify-center lg:items-start lg:justify-start flex flex-col lg:flex lg:flex-row">
+              <div className=" w-[320px] lg:w-[350px]">
                 <Input label="Email/Phone Number" crossOrigin={undefined} size="lg" className="p-5"/>
+                <Typography 
+                    className="text-sm font-normal lg:text-left text-center lg:text-[12px] mb-1 lg:mb-4 text-[#3A3A3A] w-[307px] lg:w-[444px] leading-[18px]"
+                >
+                    Swap Crypto & Tokens on Vridacoin for free
+                </Typography>
               </div>
-              <AppButton variant="secondary">
+              <AppButton variant="secondary" size="lg">
                 Get Started
               </AppButton>
             </Space>
-            <Typography 
-                className="text-sm font-normal lg:text-[12px] mb-1 lg:mb-4 text-[#3A3A3A] w-[444px] leading-[18px]"
-            >
-                Swap Crypto & Tokens on Vridacoin for free
-            </Typography>
           </div>
-          <div className="flex-col w-full lg:w-1/2 items-center justify-center gap-4">
-            <Card className="w-full max-w-[42rem] shadow-lg shadow-custom h-[775px] bg-[#F7F7FC]">
+          <div className="flex-col w-full lg:w-1/2 items-center justify-center gap-4 px-5 mt-5 lg:mt-0 lg:px-5">
+            <Card className="w-full lg:max-w-[42rem] shadow-lg shadow-custom h-[775px] bg-[#F7F7FC]">
               <CardBody>
                 <Typography
                    className="text-sm font-normal lg:text-[13px] mb-1 lg:mb-4 text-[#3A3A3A] w-[80px] leading-[17px] ml-auto"
@@ -129,7 +129,7 @@ export const Hero: FC<HeroProps> = () => {
 
                 <div className="bg-[#3754FF] w-full h-40 rounded-xl items-center justify-between flex gap-2 p-10">
                   {Object.entries(timeLeft).map(([unit, value]) => (
-                    <Space key={unit} size={8} direction="vertical">
+                    <Space key={unit} size={8} direction="vertical" className="items-center justify-center">
                       <Typography className="text-sm font-normal lg:text-[16px] mb-1 lg:mb-4 text-white leading-[24px] ml-auto">
                         {unit.charAt(0).toUpperCase() + unit.slice(1)}
                       </Typography>
@@ -204,14 +204,14 @@ export const Hero: FC<HeroProps> = () => {
 
                   { selectedBtn === "eth" && 
                     (
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full gap-5">
                         <Space direction="vertical" >
                           <Typography
                             className="text-sm font-normal lg:text-[12px] text-[#3A3A3A] leading-[18px]"
                           >
                             ETH you pay
                           </Typography>
-                          <div className="w-[250px]">
+                          <div className="lg:w-[250px] w-[100px]">
                             <Input type="number" label="Enter amount" crossOrigin={undefined} size="lg" className="bg-[rgba(58, 58, 58, 0.05)]"/>
                           </div>
                         </Space>
@@ -221,7 +221,7 @@ export const Hero: FC<HeroProps> = () => {
                           >
                             VRINDACOIN you receive
                           </Typography>
-                          <div className="w-[250px]">
+                          <div className="lg:w-[250px] w-[100px]">
                             <Input type="number" label="" crossOrigin={undefined} size="lg" className="bg-[rgba(58, 58, 58, 0.05)]"/>
                           </div>
                         </Space>
@@ -230,7 +230,7 @@ export const Hero: FC<HeroProps> = () => {
                   }
                   { selectedBtn === "usdt" && 
                     (
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full gap-5">
                         <Space direction="vertical" >
                           <Typography
                             className="text-sm font-normal lg:text-[12px] text-[#3A3A3A] leading-[18px]"
@@ -256,7 +256,7 @@ export const Hero: FC<HeroProps> = () => {
                   }
                   { selectedBtn === "card" && 
                     (
-                      <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center justify-between w-full gap-5">
                         <Space direction="vertical" >
                           <Typography
                             className="text-sm font-normal lg:text-[12px] text-[#3A3A3A] leading-[18px]"

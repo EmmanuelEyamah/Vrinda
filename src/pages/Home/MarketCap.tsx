@@ -25,7 +25,7 @@ export const MarKetcap: FC<MarKetCapProps> = () => {
                <div className="absolute top-[15%] left-[45%]">
                     <LogoIcon />
                </div>
-               <div className="absolute top-[30%] left-[5%] flex gap-[35px]">
+               <div className="absolute top-[30%] left-0 flex gap-[35px]">
                     <TokenTIcon />
                     <MCapIcon />
                     <Registered />

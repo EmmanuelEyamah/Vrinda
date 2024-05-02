@@ -59,7 +59,7 @@ export const AboutUs: FC<AboutUsProps> = () => {
         <BitCoinIcon />
       </div>
 
-        <div className="flex flex-col items-center justify-start w-full h-full gap-8 pt-56 relative">
+        <div className="flex flex-col items-center justify-start w-full h-full gap-8 pt-56 relative container">
           <Typography
               className="text-sm font-bold lg:text-[51px] text-[#3A3A3A] w-[1165px] leading-[61px] text-center"
           >

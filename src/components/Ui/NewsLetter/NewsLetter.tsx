@@ -12,7 +12,7 @@ export const NewsLetter: FC<NewsLetterProps> = () => {
   return (
     <div className="container mx-auto">
 
-        <div className="relative w-full flex items-center justify-center flex-col gap-8 z-50 h-[440px]">
+        <div className="relative w-full flex items-center justify-center flex-col gap-8 z-20 h-[440px]">
         <div className="absolute top-[-127px] z-[-1] left-0">
                 <PatternBGII />
             </div>

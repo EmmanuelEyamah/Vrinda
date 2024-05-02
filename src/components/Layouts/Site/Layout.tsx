@@ -8,7 +8,7 @@ export interface SiteLayoutProps {}
 export const SiteLayout: FC<SiteLayoutProps> = () => {
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full overflow-hidden">
         <SiteNavbar />
         <div className="bg-[rgba(247, 247, 252, 0.7)]">
             <div className="">
