@@ -18,7 +18,7 @@ export interface BlogsProps {}
 export const SinglePost: FC<BlogsProps> = () => {
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full container mx-auto">
       <div className="w-full h-[600px] bg-gradient-to-b from-[#FFFFFF] to-[#F7F7FC] relative overflow-hidden flex flex-col items-center justify-center gap-6">
           <div className="absolute top-[80px] left-[230px]">
             <OutlinedNote />
@@ -52,7 +52,7 @@ export const SinglePost: FC<BlogsProps> = () => {
 
       <div className="w-full h-[2200px] pt-52 px-32 flex items-center justify-center gap-16">
         <div className="w-[60%] h-full flex flex-col items-start gap-10">
-          <div className="w-[803px] rounded-2xl p-9 flex flex-col gap-4">
+          <div className="w-[703px] rounded-2xl p-9 flex flex-col gap-4">
             <div className="w-full h-full">
               <img src="/assets/blog1.png"/>
             </div>
@@ -92,12 +92,12 @@ export const SinglePost: FC<BlogsProps> = () => {
                 </Space>
               </div>
               <Typography
-                  className="text-sm font-semibold lg:text-[28px] text-[#3A3A3A] w-[698px] leading-[36px]"
+                  className="text-sm font-semibold lg:text-[28px] text-[#3A3A3A] w-[598px] leading-[36px]"
               >
                 Maximizing Potential discover the Benefits of Our ICO Investment
               </Typography>
               <Typography
-                  className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] w-[691px] leading-[24px]"
+                  className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] w-[591px] leading-[24px]"
               >
                 In the world of cryptocurrency, ICOs (Initial Coin Offerings) have emerged as a powerful fundraising tool for innovative projects and blockchain-based startups. "ICO Success Stories: Realizing the Potential of Token Sales" delves into the remarkable achievements and breakthroughs witnessed in the realm of ICOs
                 This blog explores how these token sales have transformed the way companies raise capital, democratizing investment opportunities and enabling individuals from all around the world to participate. We dive into inspiring success stories of projects that started with an ICO and went on to disrupt industries, revolutionize technology, and create immense value for their investors. Discover how ICOs have unleashed.
@@ -123,7 +123,7 @@ export const SinglePost: FC<BlogsProps> = () => {
         </div>
 
         <div className="w-[40%] h-full flex flex-col items-start gap-10">
-          <div className="w-[445px] h-[173px] bg-[#F7F7FC] rounded-xl p-10">
+          <div className="w-[405px] h-[173px] bg-[#F7F7FC] rounded-xl p-10">
             <Typography
                 className="text-sm font-semibold lg:text-[21px] text-[#3A3A3A] leading-[27px] mb-4"
             >
@@ -131,7 +131,7 @@ export const SinglePost: FC<BlogsProps> = () => {
             </Typography>
             <Input label="Search" icon={<SearchOutlined />} crossOrigin={undefined}/>
           </div>
-          <div className="w-[445px] h-[331px] bg-[#F7F7FC] rounded-xl p-10">
+          <div className="w-[405px] h-[331px] bg-[#F7F7FC] rounded-xl p-10">
             <Typography
                 className="text-sm font-semibold lg:text-[21px] text-[#3A3A3A] leading-[27px] mb-4"
             >
@@ -148,7 +148,7 @@ export const SinglePost: FC<BlogsProps> = () => {
               Vrindacoin <br />
             </Typography>
           </div>
-          <div className="w-[445px] h-[390px] bg-[#F7F7FC] rounded-xl p-10">
+          <div className="w-[405px] h-[390px] bg-[#F7F7FC] rounded-xl p-10">
             <Typography
                 className="text-sm font-semibold lg:text-[21px] text-[#3A3A3A] leading-[27px] mb-4"
             >
@@ -201,7 +201,7 @@ export const SinglePost: FC<BlogsProps> = () => {
             </div>
           </div>
 
-          <div className="w-[445px] h-[410px] bg-[#F7F7FC] rounded-xl p-10">
+          <div className="w-[405px] h-[410px] bg-[#F7F7FC] rounded-xl p-10">
             <Typography
                 className="text-sm font-semibold lg:text-[21px] text-[#3A3A3A] leading-[27px] mb-4"
             >
@@ -243,7 +243,7 @@ export const SinglePost: FC<BlogsProps> = () => {
             </div>
           </div>
 
-          <div className="w-[510px] flex items-center justify-start gap-2">
+          <div className="w-[405px] flex items-center justify-start gap-2">
                 <Typography
                     className="text-sm font-medium lg:text-[16px] text-[#3A3A3A] leading-[24px]"
                 >

@@ -14,7 +14,7 @@ export interface BlogProps {}
 export const Blog: FC<BlogProps> = () => {
 
   return (
-    <div className="w-full flex flex-col items-center justify-start relative gap-5 h-[1000px]">
+    <div className="w-full flex flex-col items-center justify-start relative gap-5 h-[1000px] container mx-auto">
         <Typography
             className="text-sm font-bold lg:text-[28px] text-[#3754FF] leading-[36px] w-[280px]"
         >

@@ -9,7 +9,7 @@ export interface MoreQAProps {}
 export const MoreQA: FC<MoreQAProps> = () => {
 
   return (
-    <div className="w-full flex h-[800px] items-start justify-center relative py-28">
+    <div className="w-full flex h-[800px] items-start justify-center relative py-28 container mx-auto">
         <div className="w-[1316px] h-[306px] rounded-2xl bg-[#F7F7FC] p-10 flex-col flex items-center justify-center shadow-lg">
             <Breadcrumb />
             <Typography className="text-sm font-normal lg:text-[28px] mb-1 lg:mb-4 gradient-text leading-[36px] text-center">

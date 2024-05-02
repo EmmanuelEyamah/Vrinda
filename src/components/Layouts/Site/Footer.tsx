@@ -28,7 +28,7 @@ export interface SiteFooterProps {}
 export const SiteFooter: FC<SiteFooterProps> = () => {
   useScrollToTop();
   return (
-    <footer className="relative w-full flex items-center justify-center h-[360px]">
+    <footer className="relative w-full flex items-center justify-center h-[360px] container mx-auto">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <div className="flex flex-col gap-4">

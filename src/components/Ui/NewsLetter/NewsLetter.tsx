@@ -1,6 +1,5 @@
 import { FC } from "react";
 import PatternBGII from "../svg/patternBGII";
-import StripPatternIII from "../svg/strip-pattern3";
 import { Input, Typography } from "@material-tailwind/react";
 import { Space } from "antd";
 import { AppButton } from "../Button/Button";
@@ -11,12 +10,9 @@ export interface NewsLetterProps {}
 export const NewsLetter: FC<NewsLetterProps> = () => {
 
   return (
-    <div className="relative w-full bg-[#3754FF] h-[450px] flex items-center justify-center flex-col gap-8 z-50">
+    <div className="relative w-full flex items-center justify-center flex-col gap-8 z-50 container mx-auto h-[440px]">
        <div className="absolute top-[-127px] z-[-1] left-0">
             <PatternBGII />
-        </div>
-       <div className="absolute bottom-0 left-0 z-10">
-            <StripPatternIII />
         </div>
 
         <Typography

@@ -210,7 +210,7 @@ export const SiteNavbar: FC<SiteNavbarProps> = () => {
         <AppButton variant="accent" size="sm">Get involved</AppButton>
       </div>
       <Navbar
-        className={`mx-auto max-w-full px-20 py-2 z-50 ${
+        className={`mx-auto max-w-full px-20 py-2 z-[10000] ${
           isSticky ? "sticky top-0 bg-white shadow-lg z-50" : ""
         }`}
       >

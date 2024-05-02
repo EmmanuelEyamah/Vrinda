@@ -30,7 +30,7 @@ export interface AboutUsProps {}
 export const AboutUs: FC<AboutUsProps> = () => {
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full container mx-auto">
       <div className="absolute top-[25%] left-[20%]">
         <StarIcon />
       </div>
@@ -80,7 +80,7 @@ export const AboutUs: FC<AboutUsProps> = () => {
 
         </div>
       
-          <div className="bg-[#F7F7FC] w-full h-[1300px] flex items-center justify-center px-3 z-[-10]">
+          <div className="bg-[#F7F7FC] h-[1300px] flex items-start justify-start px-6 pt-12 z-[-10]">
               <div className="w-1/2 p-5 flex flex-col gap-[40px]">
                   <div className="flex flex-col gap-2">
                       <Space size={0}>
@@ -156,7 +156,7 @@ export const AboutUs: FC<AboutUsProps> = () => {
           <MarKetcap />
         </div>
 
-        <div className="h-[1000px] w-full flex items-start justify-center p-12 gap-52 relative">
+        <div className="h-[1000px] w-full flex items-start justify-center p-12 gap-12 relative">
           <div className="W-1/2">
             <img src="/assets/about.png"/>
           </div>
@@ -199,7 +199,7 @@ export const AboutUs: FC<AboutUsProps> = () => {
           </div>
         </div>
 
-        <div className="h-[800px] w-full flex items-start justify-center p-12 gap-52 relative">
+        <div className="h-[800px] w-full flex items-start justify-center p-12 gap-12 relative">
           <div className="W-1/2 flex flex-col">
               <Typography
                   className="text-sm font-bold lg:text-[38px] text-[#3A3A3A] w-[596px] leading-[47px] mb-3"

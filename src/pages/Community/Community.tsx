@@ -67,7 +67,7 @@ export const Community: FC<CommunityProps> = () => {
             </AppButton>
           </div>
         </div>
-        <div className="w-full h-[1400px] relative overflow-hidden flex flex-col items-center justify-start gap-20 pt-40">
+        <div className="w-full h-[1400px] relative overflow-hidden flex flex-col items-center justify-start gap-20 pt-40 container mx-auto">
           <div className="w-full flex items-center justify-center gap-52">
             <Typography
                 className="text-sm font-medium lg:text-[38px] text-[#3A3A3A] w-[528px] leading-[47px]"

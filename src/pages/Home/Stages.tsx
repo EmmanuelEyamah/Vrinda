@@ -9,11 +9,11 @@ export interface StagesProps {}
 export const Stages: FC<StagesProps> = () => {   
 
   return (
-    <div className="w-full flex flex-col h-full items-center justify-center relative py-28">
-        <div className="absolute left-0 top-0 z-10">
+    <div className="w-full flex flex-col h-full items-center justify-center relative container mx-auto py-28 px-9">
+        <div className="absolute left-[-40px] top-0 z-10">
             <StripPattern />
         </div>
-        <div className="w-[1416px] h-[597px] rounded-2xl bg-[#3754FF] z-20 p-10 flex items-start">
+        <div className="w-[1316px] h-[597px] rounded-2xl bg-[#3754FF] z-20 p-10 flex items-start">
             <div className="flex flex-col gap-10 w-1/2">
                 <div>
                     <Space size={0}>
@@ -143,12 +143,12 @@ export const Stages: FC<StagesProps> = () => {
             </div>
         </div>
 
-            <div className="w-[1460px] px-2 py-4 mt-6 relative">
+            <div className="w-[1260px] px-2 py-4 mt-6 relative">
                 <div className="flex items-center">
                     <div className="flex justify-between w-full">
                         <div className="flex flex-col items-center">
                             <div className="w-4 h-4  bg-[#3754FF] rounded-full"></div>
-                            <div className="mt-6 w-[250px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
+                            <div className="mt-6 w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
                                 <div className="border-b-2 border-[#3754FF] py-1">
                                     25 April - 30 April
                                 </div>
@@ -160,7 +160,7 @@ export const Stages: FC<StagesProps> = () => {
                         </div>
                         <div className="flex flex-col items-center">
                             <div className="w-4 h-4  bg-[#3754FF] rounded-full"></div>
-                            <div className="mt-6 w-[250px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
+                            <div className="mt-6 w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
                                 <div className="border-b-2 border-[#3754FF] py-1">
                                     1 may - 7 may
                                 </div>
@@ -172,7 +172,7 @@ export const Stages: FC<StagesProps> = () => {
                         </div>
                         <div className="flex flex-col items-center">
                             <div className="w-4 h-4 bg-[#3754FF] rounded-full"></div>
-                            <div className="mt-6 w-[250px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
+                            <div className="mt-6 w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
                                 <div className="border-b-2 border-[#3754FF] py-1">
                                     Sep 16 - Sep 30
                                 </div>
@@ -184,7 +184,7 @@ export const Stages: FC<StagesProps> = () => {
                         </div>
                         <div className="flex flex-col items-center">
                             <div className="w-4 h-4 bg-[#3754FF] rounded-full"></div>
-                            <div className="mt-6 w-[250px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
+                            <div className="mt-6 w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
                                 <div className="border-b-2 border-[#3754FF] py-1">
                                     8 may - 14 may
                                 </div>
@@ -196,7 +196,7 @@ export const Stages: FC<StagesProps> = () => {
                         </div>
                         <div className="flex flex-col items-center">
                             <div className="w-4 h-4 bg-[#3754FF] rounded-full"></div>
-                            <div className="mt-6 w-[250px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
+                            <div className="mt-6 w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
                                 <div className="border-b-2 border-[#3754FF] py-1">
                                     15 may - 30 may
                                 </div>
@@ -206,7 +206,7 @@ export const Stages: FC<StagesProps> = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="absolute top-[-110px] left-[125px] w-[1205px] h-full">
+                        <div className="absolute top-[-110px] left-[125px] w-[1005px] h-full">
                             <svg height="100%" width="100%">
                                 <line x1="0" y1="50%" x2="100%" y2="50%" style={{ stroke: '#3754FF', strokeWidth: 4, strokeDasharray: '10 20' }} />
                             </svg>

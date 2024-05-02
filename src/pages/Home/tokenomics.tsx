@@ -70,7 +70,7 @@ export interface TokenomicsProps {}
 export const Tokenomics: FC<TokenomicsProps> = () => {
 
   return (
-    <div className="w-full flex flex-col items-center justify-center p-16 gap-11 h-[1300px]" id="tokenomics">
+    <div className="w-full flex flex-col items-center justify-center p-16 gap-11 h-[1300px] container mx-auto" id="tokenomics">
         <div className="w-full items-center flex justify-center gap-10">
             <Typography
                 className="text-sm font-bold lg:text-[51px] text-[#3754FF] leading-[61px] w-[304px] text-center"
@@ -98,7 +98,7 @@ export const Tokenomics: FC<TokenomicsProps> = () => {
                   VRINDACOIN HAS A TOTAL SUPPLY OF 9.6 MILLION TOKENS
               </Typography>
             <Typography
-                  className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] leading-[24px] w-[692px]"
+                  className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] leading-[24px] lg:w-[582px]"
               >
                   The vrinda token is minted on Ethereum and is unique in that it can also be claimed, stored and traded on Solana, BNB Chain, Base, Polygon, or Avalanche using Wormhole and Portal Bridge tech.
             </Typography>

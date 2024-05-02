@@ -11,16 +11,16 @@ export interface WhyUsProps {}
 export const WhyUs: FC<WhyUsProps> = () => {
 
   return (
-    <div className="w-full flex flex-col items-start justify-center p-24 gap-11">
+    <div className="w-full flex flex-col items-start justify-center p-24 gap-11 container mx-auto">
         <div className="ml-auto">
             <HandIcon />
         </div>
         <HeaderText label="Why choose our Token"/>
-        <div className="grid grid-cols-3 gap-5 w-full">
-            <div className="w-[500px] h-[500px] bg-[#f7f7fc] p-5 rounded-xl flex flex-col items-start justify-center gap-3">
+        <div className="grid grid-cols-3 gap-10 w-full">
+            <div className="w-[350px] h-[400px] bg-[#f7f7fc] p-5 rounded-xl flex flex-col items-start justify-center gap-3">
                 <MobilePaymentIcon />
                 <Typography
-                    className="text-sm font-semibold lg:text-[38px] text-[#3A3A3A] leading-[47px] w-[304px]"
+                    className="text-sm font-semibold lg:text-[30px] text-[#3A3A3A] leading-[47px] w-[304px]"
                 >
                     Mobile payment made easy
                 </Typography>
@@ -30,10 +30,10 @@ export const WhyUs: FC<WhyUsProps> = () => {
                     You can use a mobile device to pay with simple steps
                 </Typography>
             </div>
-            <div className="w-[500px] h-[500px] bg-[#f7f7fc] p-5 rounded-xl flex flex-col items-start justify-center gap-3">
+            <div className="w-[350px] h-[400px] bg-[#f7f7fc] p-5 rounded-xl flex flex-col items-start justify-center gap-3">
                 <FreeTFIcon />
                 <Typography
-                    className="text-sm font-semibold lg:text-[38px] text-[#3A3A3A] leading-[47px] w-[304px]"
+                    className="text-sm font-semibold lg:text-[30px] text-[#3A3A3A] leading-[47px] w-[304px]"
                 >
                     Life time free transaction
                 </Typography>
@@ -43,10 +43,10 @@ export const WhyUs: FC<WhyUsProps> = () => {
                     You can buy token without paying any transaction fee
                 </Typography>
             </div>
-            <div className="w-[500px] h-[500px] bg-[#f7f7fc] p-5 rounded-xl flex flex-col items-start justify-center gap-3">
+            <div className="w-[350px] h-[400px] bg-[#f7f7fc] p-5 rounded-xl flex flex-col items-start justify-center gap-3">
                 <SecurityIcon />
                 <Typography
-                    className="text-sm font-semibold lg:text-[38px] text-[#3A3A3A] leading-[47px] w-[304px]"
+                    className="text-sm font-semibold lg:text-[30px] text-[#3A3A3A] leading-[47px] w-[304px]"
                 >
                     Security and control over money
                 </Typography>

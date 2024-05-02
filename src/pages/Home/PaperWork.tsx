@@ -16,8 +16,8 @@ export interface PaperWorkProps {}
 export const PaperWork: FC<PaperWorkProps> = () => {
 
   return (
-    <div className="w-full flex flex-col h-full items-center justify-center relative py-28">
-        <div className="w-[1416px] h-[597px] rounded-2xl bg-[#081C45] p-10 flex items-start relative">
+    <div className="w-full flex flex-col h-full items-center justify-center relative py-28 container mx-auto">
+        <div className="w-[1316px] h-[597px] rounded-2xl bg-[#081C45] p-10 flex items-start relative">
           <div className="absolute bottom-0 right-0 z-20">
             <GradientBG />
           </div>

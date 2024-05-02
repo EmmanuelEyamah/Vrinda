@@ -7,7 +7,7 @@ export interface PolicyProps {}
 export const Policy: FC<PolicyProps> = () => {
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full container mx-auto">
         <div className="p-20">
           <div className="w-full rounded-bl-2xl rounded-br-2xl h-[600px] bg-gradient-to-b from-[#FFFFFF] to-[#F7F7FC] relative overflow-hidden flex flex-col items-center justify-center gap-6">
             <Typography

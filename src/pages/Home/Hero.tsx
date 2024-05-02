@@ -65,7 +65,7 @@ export const Hero: FC<HeroProps> = () => {
   });
 
   return (
-    <div className="relative mx-auto min-h-screen">
+    <div className="relative mx-auto lg:min-h-[1300px] container">
       <div className="absolute top-0 right-[50%]">
         <StarIcon />
       </div>
@@ -75,19 +75,19 @@ export const Hero: FC<HeroProps> = () => {
       <div className="absolute top-[10%] right-[60%]">
         <StLineIIIcon />
       </div>
-      <div className="absolute top-0 right-[82px] z-[1000]">
+      <div className="absolute top-[-15px] right-[12px] z-[1000]">
         <EthIcon />
       </div>
-      <div className="absolute bottom-[300px] right-[900px] z-30" >
+      <div className="absolute lg:bottom-[350px] lg:right-[580px] z-30" >
         <BitCoinIcon />
       </div>
-      <div className="absolute bottom-[200px] left-[300px]">
+      <div className="absolute lg:bottom-[500px] lg:left-[150px]">
         <EthIcon />
       </div>
-      <div className=" flex-col items-start justify-center lg:flex lg:flex-row gap-20 px-40 pt-[100px]">
+      <div className="flex-col items-start justify-center lg:flex lg:flex-row gap-32 px-5 pt-[100px]">
           <div className="flex-col w-full lg:w-1/2 items-center justify-center gap-4">
             <Typography 
-                className="text-4xl font-bold lg:text-[64px] mb-1 lg:mb-4 text-[#3A3A3A] w-[759px] leading-[79px]"
+                className="text-4xl font-bold md:text-[50px] lg:text-[58px] mb-1 lg:mb-4 text-[#3A3A3A] w-[759px] leading-[79px]"
             >
                 Welcome to the future of cryptocurrency with Vrinda Coin!
             </Typography>
@@ -127,7 +127,7 @@ export const Hero: FC<HeroProps> = () => {
                   Vrinda Presale is live!
                 </Typography>
 
-                <div className="bg-[#3754FF] w-[630px] h-40 rounded-xl items-center justify-between flex gap-2 p-10">
+                <div className="bg-[#3754FF] w-full h-40 rounded-xl items-center justify-between flex gap-2 p-10">
                   {Object.entries(timeLeft).map(([unit, value]) => (
                     <Space key={unit} size={8} direction="vertical">
                       <Typography className="text-sm font-normal lg:text-[16px] mb-1 lg:mb-4 text-white leading-[24px] ml-auto">

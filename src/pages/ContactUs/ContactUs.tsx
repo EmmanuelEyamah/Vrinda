@@ -15,7 +15,7 @@ export interface ContactUsProps {}
 export const ContactUs: FC<ContactUsProps> = () => {
 
   return (
-    <div className="w-full h-[1300px] flex flex-col items-start justify-start p-24 gap-8">
+    <div className="w-full h-[1300px] flex flex-col items-start justify-start p-24 gap-8 container mx-auto">
         <div className="w-[510px] flex items-center justify-start gap-2">
             <div className="w-[140px] h-1 bg-[#3754FF]"></div>
             <Typography

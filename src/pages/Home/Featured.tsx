@@ -21,10 +21,10 @@ export interface FeaturedProps {}
 export const Featured: FC<FeaturedProps> = () => {
 
   return (
-    <div className="w-full flex flex-col items-center justify-center relative">
+    <div className="w-full flex flex-col items-center justify-center relative container mx-auto">
         <HeaderBG />
         <Typography
-            className="text-sm font-bold lg:text-[51px] mb-1 lg:mb-4 text-[#3754FF] leading-[61px] absolute left-[38%] top-11 mt-2"
+            className="text-sm font-bold lg:text-[51px] mb-1 lg:mb-4 text-[#3754FF] leading-[61px] absolute lg:left-[32%] top-11 mt-2"
         >
             Vrinda coin featured In
         </Typography>
@@ -37,7 +37,7 @@ export const Featured: FC<FeaturedProps> = () => {
             <CoinDeskIcon />
         </div>
 
-        <div className="bg-[#F7F7FC] w-[1600px] h-[730px] rounded-lg mt-[120px] shadow-xl flex items-center justify-center px-3">
+        <div className="bg-[#F7F7FC] lg:w-[1250px] h-[730px] rounded-lg mt-[120px] shadow-xl flex lg:items-start px-3 relative lg:py-10">
             <div className="w-1/2 p-5 flex flex-col gap-[40px]">
                 <div className="flex flex-col gap-2">
                     <Space size={0}>
@@ -45,7 +45,7 @@ export const Featured: FC<FeaturedProps> = () => {
                         <SIcon />
                     </Space>
                     <Typography
-                        className="text-sm font-normal lg:text-[28px]  text-[#3A3A3A] leading-[36px] w-[629px]"
+                        className="text-sm font-normal lg:text-[25px]  text-[#3A3A3A] leading-[36px] w-[629px]"
                     >
                         We’ve built a cryptocurrency exchange platform designed to bridge the gap between traditional finance and the world of decentralized finance (DeFi)
                     </Typography>
@@ -60,7 +60,7 @@ export const Featured: FC<FeaturedProps> = () => {
                         <BoltIcon />
                     </Space>
                     <Typography
-                        className="text-sm font-normal lg:text-[16px]  text-[#3A3A3A] leading-[24px] w-[648px]"
+                        className="text-sm font-normal lg:text-[16px]  text-[#3A3A3A] leading-[24px] w-[548px]"
                     >
                         VRINDA is a 100% pre-scratched cryptome There are 1 Million Minutes, and 60% of them can be yours (60% - ICO) Utility & security token (appliezs to all transactions and gives a monthly dividend) <br />
                         Iko is a 100% pre-scratched cryptome There are 1 Million Minutes, and 60% of them can be yours (60% - ICO) Utility & security token (applies to all transactions and gives a monthly dividend) <br />
@@ -89,8 +89,8 @@ export const Featured: FC<FeaturedProps> = () => {
                     </div>
                 </Space>
             </div>
-            <div className="w-1/2">
-                <FeatureImg />
+            <div className="w-1/2 lg:absolute lg:right-[120px] top-[-140px]">
+                    <FeatureImg />
             </div>
         </div>
     </div>

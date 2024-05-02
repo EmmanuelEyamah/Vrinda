@@ -28,7 +28,7 @@ export const FAQ: FC<FAQProps> = () => {
     ];
 
   return (
-    <div className="relative w-full bg-gradient-to-b from-[#F7F7FC] to-[#FFFFFF] h-[700px] flex items-start flex-col justify-normal">
+    <div className="relative w-full bg-gradient-to-b from-[#F7F7FC] to-[#FFFFFF] h-[700px] flex items-start flex-col justify-normal container mx-auto">
         <div className="absolute top-[-127px] z-[-1] left-0">
             <PatternBG />
         </div>
@@ -57,7 +57,7 @@ export const FAQ: FC<FAQProps> = () => {
                         key={button.id}
                         className={`bg-transparent ${
                             selectedBtn === button.value ? 'border-b-4 border-[#3754FF]' : ''
-                        } text-[#3A3A3A] font-normal text-[16px] leading-[24px]  py-2 px-4 rounded-none w-[160px]`}
+                        } text-[#3A3A3A] font-normal text-[16px] leading-[24px]  py-2 rounded-none w-[500px]`}
                         onClick={() => handleBtnClick(button.value)}
                         >
                         {button.label}
@@ -65,7 +65,7 @@ export const FAQ: FC<FAQProps> = () => {
                     ))}
                 </div>
 
-                <div className="mt-5 w-[840px]">
+                <div className="mt-5 w-[530px]">
                     { selectedBtn === "general" &&  (
                         <AccordionComponent items={items}/>
                     )}

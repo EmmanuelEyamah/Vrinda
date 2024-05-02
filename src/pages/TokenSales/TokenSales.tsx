@@ -114,7 +114,7 @@ export const TokenSales: FC<TokenSalesProps> = () => {
     return () => clearTimeout(timer);
   });
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full container mx-auto">
         <div className="w-full h-[600px] relative flex flex-col items-start gap-6 pt-32 px-20">
           <div className="absolute top-[120px] left-[430px]">
             <SIcon />
@@ -429,12 +429,12 @@ export const TokenSales: FC<TokenSalesProps> = () => {
         <div className="w-full flex items-center justify-center gap-16 bg-[#F7F7FC] rounded-xl p-10">
             <div className="w-1/2 p-5 flex flex-col gap-8 h-[768px] rounded shadow-lg shadow-custom">
               <Typography
-                    className="text-sm font-normal lg:text-[28px] text-[#3A3A3A] leading-[36px] w-[582px]"
+                    className="text-sm font-normal lg:text-[28px] text-[#3A3A3A] leading-[36px] w-[482px]"
                 >
                     VRINDACOIN HAS A TOTAL SUPPLY OF 9.6 MILLION TOKENS
                 </Typography>
               <Typography
-                    className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] leading-[24px] w-[692px]"
+                    className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] leading-[24px] w-[492px]"
                 >
                     The vrinda token is minted on Ethereum and is unique in that it can also be claimed, stored and traded on Solana, BNB Chain, Base, Polygon, or Avalanche using Wormhole and Portal Bridge tech.
               </Typography>
