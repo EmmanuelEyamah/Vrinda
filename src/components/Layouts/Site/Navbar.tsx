@@ -14,7 +14,8 @@ import {
 } from "@heroicons/react/24/outline";
 import { AppButton } from "../../Ui/Button/Button";
 import  LogoIcon  from "../../Ui/svg/logo";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import useScrollToTop from "../../../hooks/useScrollToTop";
 
 const Links = [
   {
@@ -131,30 +132,42 @@ interface DropdownLinkProps {
 
 const DropdownLink: FC<DropdownLinkProps> = ({ link, isActive }) => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const navigate = useNavigate();
 
   const toggleDropdown = () => {
     setShowDropdown((prev) => !prev);
   };
 
+  const handleDropdownItemClick = (route: string) => {
+    navigate(route); 
+    toggleDropdown();
+  };
+
   return (
     <div>
       <div
-        className={`py-2 pr-4 flex gap-1 items-center z-100 ${isActive ? 'gradient-text' : 'text-[#3A3A3A]'}`}
+        className={`py-2 pr-4 flex gap-1 items-center z-100 ${
+          isActive ? "gradient-text" : "text-[#3A3A3A]"
+        }`}
         onClick={toggleDropdown}
       >
         <label>{link.label}</label>
-        {showDropdown ? <ChevronUpIcon className="h-4 w-4 ml-1" /> : <ChevronDownIcon className="h-4 w-4 ml-1" />}
+        {showDropdown ? (
+          <ChevronUpIcon className="h-4 w-4 ml-1" />
+        ) : (
+          <ChevronDownIcon className="h-4 w-4 ml-1" />
+        )}
       </div>
       {showDropdown && (
         <div className="absolute top-14 bg-white border rounded shadow-md">
           {link.dropdown?.map((item, index) => (
-            <NavLink
+            <div
               key={index}
-              to={item.route}
-              className="block py-2 px-4 text-[#3A3A3A] hover:gradient-text"
+              onClick={() => handleDropdownItemClick(item.route)} // Modify this line
+              className="block py-2 px-4 text-[#3A3A3A] hover:gradient-text cursor-pointer" // Add cursor-pointer
             >
               {item.label}
-            </NavLink>
+            </div>
           ))}
         </div>
       )}
@@ -164,7 +177,7 @@ const DropdownLink: FC<DropdownLinkProps> = ({ link, isActive }) => {
 
 export interface SiteNavbarProps {}
 export const SiteNavbar: FC<SiteNavbarProps> = () => {
-
+  useScrollToTop();
   const [openNav, setOpenNav] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -197,7 +210,7 @@ export const SiteNavbar: FC<SiteNavbarProps> = () => {
         <AppButton variant="accent" size="sm">Get involved</AppButton>
       </div>
       <Navbar
-        className={`mx-auto max-w-full px-20 py-2 ${
+        className={`mx-auto max-w-full px-20 py-2 z-50 ${
           isSticky ? "sticky top-0 bg-white shadow-lg z-50" : ""
         }`}
       >

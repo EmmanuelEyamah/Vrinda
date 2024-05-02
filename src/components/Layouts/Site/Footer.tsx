@@ -4,15 +4,20 @@ import  LogoIcon  from "../../Ui/svg/logo";
 import TwitterIcon from "../../Ui/svg/twitter";
 import DiscordIcon from "../../Ui/svg/discord";
 import TelegramIcon from "../../Ui/svg/telegram";
+import { NavLink } from "react-router-dom";
+import useScrollToTop from "../../../hooks/useScrollToTop";
  
 const LINKS = [
   {
     title: "Product",
     items: ["About us", "Tokenomics", "Road map", "FAQ"],
+    routes: ["/about", "/", "/", "/"],
   },
   {
     title: "Company",
     items: ["Privacy policy", "Disclaimer", "Terms of Service"],
+    routes: ["/policy", "/legals", "/terms"],
+
   },
 ];
  
@@ -21,7 +26,7 @@ const currentYear = new Date().getFullYear();
 
 export interface SiteFooterProps {}
 export const SiteFooter: FC<SiteFooterProps> = () => {
-
+  useScrollToTop();
   return (
     <footer className="relative w-full flex items-center justify-center h-[360px]">
       <div className="mx-auto w-full max-w-7xl px-8">
@@ -41,19 +46,21 @@ export const SiteFooter: FC<SiteFooterProps> = () => {
             </div>
           </div>
           <div className="grid grid-cols-3 justify-between gap-4">
-            {LINKS.map(({ title, items }) => (
+            {LINKS.map(({ title, items, routes }) => (
               <ul key={title}>
-                {items.map((link) => (
-                  <li key={link}>
+                {items.map((link, index) => (
+                  <NavLink
+                  to={routes[index]}
+                    key={link}
+                  >
                     <Typography
-                      as="a"
-                      href="#"
                       color="gray"
                       className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
                     >
                       {link}
                     </Typography>
-                  </li>
+                  </NavLink>
+                  
                 ))}
               </ul>
             ))}

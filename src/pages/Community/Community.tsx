@@ -20,7 +20,7 @@ export interface CommunityProps {}
 export const Community: FC<CommunityProps> = () => {
 
   return (
-    <div className="w-full h-full ">
+    <div className="w-full h-full">
         <div className="w-full h-[800px] bg-[#081C45] relative overflow-hidden flex flex-col items-center justify-center gap-6">
           <div className="absolute top-0 left-0">
             <SateliteIcon />

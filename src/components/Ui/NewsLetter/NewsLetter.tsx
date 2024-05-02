@@ -11,7 +11,7 @@ export interface NewsLetterProps {}
 export const NewsLetter: FC<NewsLetterProps> = () => {
 
   return (
-    <div className="relative w-full bg-[#3754FF] h-[450px] flex items-center justify-center flex-col gap-8">
+    <div className="relative w-full bg-[#3754FF] h-[450px] flex items-center justify-center flex-col gap-8 z-50">
        <div className="absolute top-[-127px] z-[-1] left-0">
             <PatternBGII />
         </div>

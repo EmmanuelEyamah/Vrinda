@@ -11,6 +11,7 @@ import {
   Terms, 
   TokenSales 
 } from "./pages";
+import { SinglePost } from "./pages/SinglePost/SinglePost";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           { path: "/", element: <Home /> },
           { path: "/about", element: <AboutUs /> },
           { path: "/blogs", element: <Blogs /> },
+          { path: "/blogs/123", element: <SinglePost /> },
           { path: "/community", element: <Community /> },
           { path: "/contact-us", element: <ContactUs /> },
           { path: "/legals", element: <Legals /> },

@@ -11,7 +11,7 @@ export interface MarKetCapProps {}
 export const MarKetcap: FC<MarKetCapProps> = () => {
 
   return (
-    <div className="relative w-full bg-gradient-to-b from-[#F7F7FC] to-[#FFFFFF] h-[500px] flex items-start flex-col justify-normal">
+    <div className="relative w-full bg-gradient-to-b from-[#F7F7FC] to-[#FFFFFF] h-[500px] flex items-start flex-col justify-normal z-50">
        <div className="absolute top-[-127px] z-[-1] left-0">
             <PatternBG />
        </div>
