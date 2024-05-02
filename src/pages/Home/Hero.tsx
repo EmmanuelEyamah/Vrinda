@@ -75,13 +75,13 @@ export const Hero: FC<HeroProps> = () => {
       <div className="absolute top-[10%] right-[60%]">
         <StLineIIIcon />
       </div>
-      <div className="absolute top-0 right-[132px]">
+      <div className="absolute top-0 right-[82px] z-[1000]">
         <EthIcon />
       </div>
-      <div className="absolute bottom-[200px] right-[1000px] z-30" >
+      <div className="absolute bottom-[300px] right-[900px] z-30" >
         <BitCoinIcon />
       </div>
-      <div className="absolute bottom-[250px] left-[300px]">
+      <div className="absolute bottom-[200px] left-[300px]">
         <EthIcon />
       </div>
       <div className=" flex-col items-start justify-center lg:flex lg:flex-row gap-20 px-40 pt-[100px]">
