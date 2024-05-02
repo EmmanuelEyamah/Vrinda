@@ -8,6 +8,7 @@ import {
 import { FC } from "react";
 import LiLogo from "../../components/Ui/svg/li-logo";
 import { AppButton } from "../../components/Ui/Button/Button";
+import { NavLink } from "react-router-dom";
 
 
 export interface BlogProps {}
@@ -88,9 +89,13 @@ export const Blog: FC<BlogProps> = () => {
         </div>
 
         <div className="mt-10">
-            <AppButton size="lg" variant="secondary">
-                Continue to blog   
-            </AppButton>
+            <NavLink
+              to={"/blogs"}
+            >
+                <AppButton size="lg" variant="secondary">
+                    Continue to blog   
+                </AppButton>
+            </NavLink>
         </div>
     </div>
   );
