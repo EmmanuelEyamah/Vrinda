@@ -8,7 +8,7 @@ export const Terms: FC<TermsProps> = () => {
 
   return (
     <div className="w-full h-full container mx-auto">
-        <div className="p-20">
+        <div className="p-7 lg:p-20">
           <div className="w-full rounded-bl-2xl rounded-br-2xl h-[600px] bg-gradient-to-b from-[#FFFFFF] to-[#F7F7FC] relative overflow-hidden flex flex-col items-center justify-center gap-6">
             <Typography
                 className="text-sm font-bold lg:text-[51px] text-[#3754FF] w-[945px] leading-[61px] text-center"
@@ -24,19 +24,19 @@ export const Terms: FC<TermsProps> = () => {
           </div>
         </div>
 
-        <div className="w-full h-[1000px] flex flex-col items-start p-20">
+        <div className="w-full h-[2100px] lg:h-[1000px] flex flex-col items-start p-7 lg:p-20">
           <Typography
-              className="text-sm font-normal lg:text-[28px] text-[#3A3A3A] w-[945px] leading-[38px] mb-5"
+              className="text-[16px] font-semibold lg:text-[28px] text-[#3A3A3A] w-[361px] lg:w-[945px] leading-[38px] mb-5"
           >
             Terms of service
           </Typography>
           <Typography
-              className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] w-[864px] leading-[24px]"
+              className="font-normal text-[16px] text-[#3A3A3A] w-[361px] lg:w-[864px] leading-[24px]"
           >
             Welcome to Vrinda, a revolutionary social media-integrated cryptocurrency exchange platform that aims to redefine the landscape of decentralized finance (DeFi). By accessing or using our platform, you agree to comply with and be bound by the following terms and conditions of service:
           </Typography>
           <Typography
-              className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] w-[864px] leading-[24px]"
+              className="font-normal text-[16px] text-[#3A3A3A] w-[361px] lg:w-[864px] leading-[24px]"
           >
             <span className="font-bold">Acceptance of Terms:</span> By accessing or using the Vrinda platform, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not access or use our platform. <br />
             <span className="font-bold">User Eligibility:</span> You must be at least 18 years old and have the legal capacity to enter into agreements to use our platform. By accessing or using Vrinda, you represent and warrant that you meet these eligibility requirements. <br />
