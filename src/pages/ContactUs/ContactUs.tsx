@@ -16,24 +16,24 @@ export const ContactUs: FC<ContactUsProps> = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="w-full h-[1300px] flex flex-col p-24 gap-8">
+      <div className="w-full h-[1800px] lg:h-[1300px] flex flex-col p-7 lg:p-24 gap-4 lg:gap-8">
           <div className="w-[510px] flex items-center justify-start gap-2">
-              <div className="w-[140px] h-1 bg-[#3754FF]"></div>
+              <div className="w-[40px] lg:w-[140px] h-1 bg-[#3754FF]"></div>
               <Typography
-                  className="text-sm font-medium lg:text-[28px] text-[#3A3A3A] leading-[36px]"
+                  className="text-[21px] font-medium lg:text-[28px] text-[#3A3A3A] leading-[28px] lg:leading-[36px]"
               >
                 Contact Vrindacoin
               </Typography>
           </div>
           <Typography
-              className="text-sm font-normal lg:text-[28px] text-[#3A3A3A] leading-[36px] w-[752px]"
+              className="text-[21px] font-normal lg:text-[28px] text-[#3A3A3A] leading-[28px] lg:leading-[36px] lg:w-[752px] w-[361px]"
           >
               If you’d like to get in touch with Vrindacoin regarding site and company-related issues please fill out the form below. If you want to ask a question about Bitcoin, Tokens or anything crypto-related leave us a comment on the site.
           </Typography>
 
-          <div className="flex w-full items-start justify-start gap-3 mt-10">
+          <div className="flex-col flex lg:flex lg:flex-row w-full items-start justify-start gap-3 mt-10">
             <div className="w-1/2 flex flex-col items-start">
-              <div className="w-[450px] h-[370px] rounded-2xl bg-[#F7F7FC] flex flex-col items-start relative gap-4 p-5 mb-12">
+              <div className=" w-[361px] lg:w-[450px] h-[370px] rounded-2xl bg-[#F7F7FC] flex flex-col items-start relative gap-4 p-5 mb-12">
                 <Space>
                   <div className="w-[48px] h-[40px] bg-white flex items-center justify-center">
                     <EmailIcon />
@@ -74,7 +74,7 @@ export const ContactUs: FC<ContactUsProps> = () => {
                   </Typography>
                 </div>
               </div>
-              <div className="w-[510px] flex items-center justify-start gap-2">
+              <div className="w-[361px] lg:w-[510px] flex items-center justify-start gap-2">
                   <Typography
                       className="text-sm font-medium lg:text-[16px] text-[#3A3A3A] leading-[24px]"
                   >
@@ -88,8 +88,8 @@ export const ContactUs: FC<ContactUsProps> = () => {
                 <TelegramIcon />
               </div>
             </div>
-            <div className="w-1/2">
-              <div className="w-[730px] h-[546px] rounded-2xl bg-[#F7F7FC] flex flex-col items-start gap-4 p-7">
+            <div className="w-1/2 mt-7 lg:mt-0">
+              <div className="w-[361px] lg:w-[730px] h-[700px] lg:h-[546px] rounded-2xl bg-[#F7F7FC] flex flex-col items-start gap-4 p-7">
                 <Space direction="vertical">
                   <Typography
                     className="text-sm font-medium lg:text-[21px] text-[#3A3A3A] leading-[27px]"
@@ -101,11 +101,11 @@ export const ContactUs: FC<ContactUsProps> = () => {
 
                 <div className="mt-6 w-full">
                   <form className="flex flex-col gap-10 items-center">
-                    <div className="flex items-start justify-between w-full gap-7">
+                    <div className="flex-col flex lg:flex lg:flex-row items-start justify-between w-full gap-7">
                       <Input label="First name" crossOrigin={undefined} size="lg"/>
                       <Input label="Last name" crossOrigin={undefined} size="lg"/>
                     </div>
-                    <div className="flex items-start justify-between w-full gap-7">
+                    <div className="flex-col flex lg:flex lg:flex-row items-start justify-between w-full gap-7">
                       <Input label="Email address" crossOrigin={undefined} size="lg"/>
                       <Input label="Phone number" crossOrigin={undefined} size="lg"/>
                     </div>

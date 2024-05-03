@@ -253,6 +253,7 @@ export const SiteNavbar: FC<SiteNavbarProps> = () => {
           <div className="hidden lg:block">
             <NavList setOpen={setOpenNav}/>
           </div>
+
           <div className="hidden gap-5 lg:flex">
             <AppButton variant="primary">
               Download app
@@ -261,18 +262,23 @@ export const SiteNavbar: FC<SiteNavbarProps> = () => {
               Sign up
             </AppButton>
           </div>
-          <IconButton
-            variant="text"
-            color="blue-gray"
-            className="lg:hidden"
-            onClick={() => {setOpenNav(!openNav) }}
-          >
-            {openNav ? (
-              <MenuBarIcon />
-            ) : (
-              <MenuBarIcon />
-            )}
-          </IconButton>
+
+          <div className="lg:hidden">
+            <AppButton variant="secondary">
+              Sign up
+            </AppButton>
+            <IconButton
+              variant="text"
+              color="blue-gray"
+              onClick={() => {setOpenNav(!openNav) }}
+            >
+              {openNav ? (
+                <MenuBarIcon />
+              ) : (
+                <MenuBarIcon />
+              )}
+            </IconButton>
+          </div>
         </div>
       </Navbar>
     </>
