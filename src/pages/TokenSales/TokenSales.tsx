@@ -12,6 +12,7 @@ import DotManG from "../../components/Ui/svg/dot-mang";
 import DotSeed from "../../components/Ui/svg/dot-seed";
 import DotFunds from "../../components/Ui/svg/dot-funds";
 import DotICO from "../../components/Ui/svg/dot-ico";
+import MStatIcon from "../../components/Ui/svg/m-stat";
 interface Timing {
   days?: number;
   hours?: number;
@@ -115,45 +116,45 @@ export const TokenSales: FC<TokenSalesProps> = () => {
   });
   return (
     <div className="w-full h-full container mx-auto">
-        <div className="w-full h-[600px] relative flex flex-col items-start gap-6 pt-32 px-20">
-          <div className="absolute top-[120px] left-[430px]">
+        <div className="w-full h-[600px] relative flex flex-col items-start gap-6 pt-16 lg:pt-32 px-4 lg:px-20">
+          <div className="absolute top-[10%] left-[50%] lg:top-[120px] lg:left-[430px]">
             <SIcon />
           </div>
-          <div className="absolute top-[80px] left-[50%]">
+          <div className="absolute top-[20px] lg:top-[80px] left-[30%] lg:left-[50%]">
             <StarIcon />
           </div>
-          <div className="absolute top-[10%] left-[50%]">
+          <div className="absolute top-[-20px] lg:top-[10%] left-[50%]">
             <StLineIIIcon />
           </div>
-          <div className="absolute bottom-[0px] right-[30px]">
+          <div className="absolute bottom-10 lg:bottom-[0px] right-[30px]">
             <StarIcon />
           </div>
         
          <Typography
-              className="text-sm font-bold lg:text-[67px] text-[#3A3A3A] w-[945px] leading-[79px]"
+              className="text-[38px] font-bold lg:text-[67px] text-[#3A3A3A] w-[386px] lg:w-[945px] leading-[79px] lg:text-left text-center"
           >
             Vrindacoin Tokens
           </Typography>
           <Typography
-              className="text-sm font-normal lg:text-[21px] text-[#3A3A3A] w-[1011px] leading-[27px]"
+              className="text-sm font-normal lg:text-[21px] text-[#3A3A3A] w-[382px] lg:w-[1011px] leading-[27px] lg:text-left text-center"
           >
             Vrinda is a revolutionary social media-integrated cryptocurrency exchange platform designed to bridge the gap between traditional finance and the world of decentralized finance (DeFi). Unlike other platforms, Vrinda prioritizes user experience and accessibility, making it perfect for both beginners and experienced crypto users. This exchange platform is different from other exchange platforms as it tries to lighten the steep learning curve and difficult user experience of users using the usual cryptocurrency exchange platforms, DEx or CEx.
           </Typography>
       </div>
 
-      <div className="w-full h-[1300px] relative flex flex-col items-center justify-center gap-6 px-20">
+      <div className="w-full lg:h-[1300px] h-[2300px] relative flex flex-col items-center justify-center gap-3 lg:gap-6 px-20">
         <Typography
-            className="text-sm font-bold lg:text-[61px] text-[#3754FF] leading-[61px]"
+            className="text-[21px] font-bold lg:text-[61px] text-[#3754FF] leading-[27px] lg:leading-[61px]"
         >
           Token structure
         </Typography>
         <Typography
-            className="text-sm font-normal lg:text-[21px] text-[#3A3A3A] leading-[27px]"
+            className="font-normal lg:text-[21px] text-[#3A3A3A] leading-[27px] w-[361px] lg:w-[787px] lg:text-left text-center"
         >
           Here's a mechanism for a smart contract various distribution and staking features:
         </Typography>
-        <div className="flex items-center justify-center gap-14">
-          <div className="mt-20 flex flex-col gap-5">
+        <div className="flex-col flex lg:flex lg:flex-row items-center justify-center gap-14">
+          <div className="mt-20 flex-col gap-5 hidden lg:flex">
             <div className="w-[375px] h-[122px] bg-[#F7F7FC] p-10 rounded-lg">
               <Typography
                   className="text-sm font-bold lg:text-[21px] text-[#3A3A3A] leading-[27px] text-center"
@@ -192,10 +193,10 @@ export const TokenSales: FC<TokenSalesProps> = () => {
             </div>
           </div>
           <div className="flex-col items-center justify-center gap-4">
-            <Card className="w-full max-w-[42rem] shadow-lg shadow-custom h-[775px] bg-[#F7F7FC]">
+            <Card className="w-full lg:max-w-[42rem] shadow-lg shadow-custom h-[805px] lg:h-[775px] bg-[#F7F7FC]">
               <CardBody>
                 <Typography
-                  className="text-sm font-normal lg:text-[13px] mb-1 lg:mb-4 text-[#3A3A3A] w-[80px] leading-[17px] ml-auto"
+                   className="text-sm font-normal lg:text-[13px] mb-1 lg:mb-4 text-[#3A3A3A] w-[80px] leading-[17px] ml-auto"
                 >
                   Stage 1/6
                 </Typography>
@@ -203,9 +204,9 @@ export const TokenSales: FC<TokenSalesProps> = () => {
                   Vrinda Presale is live!
                 </Typography>
 
-                <div className="bg-[#3754FF] w-[630px] h-40 rounded-xl items-center justify-between flex gap-2 p-10">
+                <div className="bg-[#3754FF] w-full h-40 rounded-xl items-center justify-between flex gap-2 p-10">
                   {Object.entries(timeLeft).map(([unit, value]) => (
-                    <Space key={unit} size={8} direction="vertical">
+                    <Space key={unit} size={8} direction="vertical" className="items-center justify-center">
                       <Typography className="text-sm font-normal lg:text-[16px] mb-1 lg:mb-4 text-white leading-[24px] ml-auto">
                         {unit.charAt(0).toUpperCase() + unit.slice(1)}
                       </Typography>
@@ -280,14 +281,14 @@ export const TokenSales: FC<TokenSalesProps> = () => {
 
                   { selectedBtn === "eth" && 
                     (
-                      <div className="flex items-center justify-between w-full">
+                      <div className=" flex flex-col lg:flex lg:flex-row items-center justify-between w-full gap-5">
                         <Space direction="vertical" >
                           <Typography
                             className="text-sm font-normal lg:text-[12px] text-[#3A3A3A] leading-[18px]"
                           >
                             ETH you pay
                           </Typography>
-                          <div className="w-[250px]">
+                          <div className="lg:w-[250px] w-[325px]">
                             <Input type="number" label="Enter amount" crossOrigin={undefined} size="lg" className="bg-[rgba(58, 58, 58, 0.05)]"/>
                           </div>
                         </Space>
@@ -297,7 +298,7 @@ export const TokenSales: FC<TokenSalesProps> = () => {
                           >
                             VRINDACOIN you receive
                           </Typography>
-                          <div className="w-[250px]">
+                          <div className="lg:w-[250px] w-[325px]">
                             <Input type="number" label="" crossOrigin={undefined} size="lg" className="bg-[rgba(58, 58, 58, 0.05)]"/>
                           </div>
                         </Space>
@@ -306,14 +307,14 @@ export const TokenSales: FC<TokenSalesProps> = () => {
                   }
                   { selectedBtn === "usdt" && 
                     (
-                      <div className="flex items-center justify-between w-full">
+                      <div className=" flex flex-col lg:flex lg:flex-row items-center justify-between w-full gap-5">
                         <Space direction="vertical" >
                           <Typography
                             className="text-sm font-normal lg:text-[12px] text-[#3A3A3A] leading-[18px]"
                           >
                             USDT you pay
                           </Typography>
-                          <div className="w-[250px]">
+                          <div className="lg:w-[250px] w-[325px]">
                             <Input type="number" label="Enter amount" crossOrigin={undefined} size="lg" className="bg-[rgba(58, 58, 58, 0.05)]"/>
                           </div>
                         </Space>
@@ -323,7 +324,7 @@ export const TokenSales: FC<TokenSalesProps> = () => {
                           >
                             VRINDACOIN you receive
                           </Typography>
-                          <div className="w-[250px]">
+                          <div className="lg:w-[250px] w-[325px]">
                             <Input type="number" label="" crossOrigin={undefined} size="lg" className="bg-[rgba(58, 58, 58, 0.05)]"/>
                           </div>
                         </Space>
@@ -332,14 +333,14 @@ export const TokenSales: FC<TokenSalesProps> = () => {
                   }
                   { selectedBtn === "card" && 
                     (
-                      <div className="flex items-center justify-between w-full">
+                      <div className=" flex flex-col lg:flex lg:flex-row items-center justify-between w-full gap-5">
                         <Space direction="vertical" >
                           <Typography
                             className="text-sm font-normal lg:text-[12px] text-[#3A3A3A] leading-[18px]"
                           >
                             AMOUNT you pay
                           </Typography>
-                          <div className="w-[250px]">
+                          <div className="lg:w-[250px] w-[325px]">
                             <Input type="number" label="Enter amount" crossOrigin={undefined} size="lg" className="bg-[rgba(58, 58, 58, 0.05)]"/>
                           </div>
                         </Space>
@@ -349,7 +350,7 @@ export const TokenSales: FC<TokenSalesProps> = () => {
                           >
                             VRINDACOIN you receive
                           </Typography>
-                          <div className="w-[250px]">
+                          <div className="lg:w-[250px] w-[325px]">
                             <Input type="number" label="" crossOrigin={undefined} size="lg" className="bg-[rgba(58, 58, 58, 0.05)]"/>
                           </div>
                         </Space>
@@ -404,10 +405,48 @@ export const TokenSales: FC<TokenSalesProps> = () => {
               </Typography>
             </div>
           </div>
+          <div className="mt-20 flex-col gap-5 flex lg:hidden">
+            <div className="w-[375px] h-[122px] bg-[#F7F7FC] p-10 rounded-lg">
+              <Typography
+                  className="text-sm font-bold lg:text-[21px] text-[#3A3A3A] leading-[27px] text-center"
+              >
+                Token name
+              </Typography>
+              <Typography
+                  className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] leading-[24px] text-center"
+              >
+                Vrindacoin
+              </Typography>
+            </div>
+            <div className="w-[375px] h-[122px] bg-[#F7F7FC] p-10 rounded-lg">
+              <Typography
+                  className="text-sm font-bold lg:text-[21px] text-[#3A3A3A] leading-[27px] text-center"
+              >
+                Normal Price
+              </Typography>
+              <Typography
+                  className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] leading-[24px] text-center"
+              >
+                1 VRC = $12USD
+              </Typography>
+            </div>
+            <div className="w-[375px] h-[122px] bg-[#F7F7FC] p-10 rounded-lg">
+              <Typography
+                  className="text-sm font-bold lg:text-[21px] text-[#3A3A3A] leading-[27px] text-center"
+              >
+                Total Tokens sold
+              </Typography>
+              <Typography
+                  className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] leading-[24px] text-center"
+              >
+                2,888,529.35
+              </Typography>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="p-20 h-[1000px]">
+      <div className="p-2 lg:p-20 h-[1200px] lg:h-[1000px]">
         <Space className="mb-6" size={15}>
            <Space direction="vertical" size={0}>
               <Typography
@@ -426,168 +465,173 @@ export const TokenSales: FC<TokenSalesProps> = () => {
               <div className="w-[120px] h-0.5 bg-[rgba(58, 58, 58, 0.5)]"></div>
             </Space>
         </Space>
-        <div className="w-full flex items-center justify-center gap-16 bg-[#F7F7FC] rounded-xl p-10">
-            <div className="w-1/2 p-5 flex flex-col gap-8 h-[768px] rounded shadow-lg shadow-custom">
-              <Typography
-                    className="text-sm font-normal lg:text-[28px] text-[#3A3A3A] leading-[36px] w-[482px]"
-                >
-                    VRINDACOIN HAS A TOTAL SUPPLY OF 9.6 MILLION TOKENS
-                </Typography>
-              <Typography
-                    className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] leading-[24px] w-[492px]"
-                >
-                    The vrinda token is minted on Ethereum and is unique in that it can also be claimed, stored and traded on Solana, BNB Chain, Base, Polygon, or Avalanche using Wormhole and Portal Bridge tech.
+        <div className="w-full flex-col flex lg:flex lg:flex-row items-center justify-center gap-16 bg-[#F7F7FC] rounded-xl p-10">
+            <div className="w-[370px] lg:w-1/2 p-2 lg:p-5 flex flex-col gap-8 h-[768px] rounded shadow-lg shadow-custom">
+            <Typography
+                  className="text-[21px] font-normal lg:text-[28px] text-[#3A3A3A] lg:leading-[36px] lg:w-[582  px] leading-[28px] w-[312px]"
+              >
+                  VRINDACOIN HAS A TOTAL SUPPLY OF 9.6 MILLION TOKENS
               </Typography>
+            <Typography
+                  className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] leading-[24px] lg:w-[582px]"
+              >
+                  The vrinda token is minted on Ethereum and is unique in that it can also be claimed, stored and traded on Solana, BNB Chain, Base, Polygon, or Avalanche using Wormhole and Portal Bridge tech.
+            </Typography>
 
-              <div className="grid grid-cols-4 gap-x-0">
-                  <React.Fragment>
-                    {TABLE_HEAD.map((head) => (
-                        <div
-                          key={head}
-                          className="col-span-1  mb-5"
+            <div className="grid grid-cols-4 gap-x-0">
+                <React.Fragment>
+                  {TABLE_HEAD.map((head) => (
+                      <div
+                        key={head}
+                        className="col-span-1  mb-5"
+                      >
+                        <Typography
+                          className="font-normal text-sm lg:text-[16px] text-[#3754FF] leading-[24px]"
                         >
-                          <Typography
-                            className="font-normal text-sm lg:text-[16px] text-[#3754FF] leading-[24px]"
-                          >
-                            {head}
-                          </Typography>
-                        </div>
-                    ))}
-                  </React.Fragment>
-                  {TABLE_ROWS.map(({ icon, name, supply, msupply, lksupply }, index) => {
-        
-                    return (
-                      <React.Fragment key={index}>
-                        <div className="col-span-1 bg-white mb-5 p-2 rounded-tl-lg rounded-bl-lg shadow-lg">
-                          <Space>
-                            {icon}
-                            <Typography
-                              variant="small"
-                              color="blue-gray"
-                              className="font-normal"
-                            >
-                              {name}
-                            </Typography>
-                          </Space>
-                        </div>
-                        <div className="col-span-1 bg-white mb-5 p-2 shadow-lg">
+                          {head}
+                        </Typography>
+                      </div>
+                  ))}
+                </React.Fragment>
+                {TABLE_ROWS.map(({ icon, name, supply, msupply, lksupply }, index) => {
+      
+                  return (
+                    <React.Fragment key={index}>
+                      <div className="col-span-1 bg-white mb-5 p-2 rounded-tl-lg rounded-bl-lg shadow-lg">
+                        <Space>
+                          {icon}
                           <Typography
                             variant="small"
                             color="blue-gray"
                             className="font-normal"
                           >
-                            {supply}
+                            {name}
                           </Typography>
-                        </div>
-                        <div className="col-span-1 bg-white mb-5 p-2 shadow-lg">
-                          <Typography
-                            variant="small"
-                            color="blue-gray"
-                            className="font-normal"
-                          >
-                            {msupply}
-                          </Typography>
-                        </div>
-                        <div className="col-span-1 bg-white mb-5 p-2 rounded-tr-lg rounded-br-lg shadow-lg">
-                          <Typography
-                            as="a"
-                            href="#"
-                            variant="small"
-                            color="blue-gray"
-                            className="font-medium"
-                          >
-                            {lksupply}
-                          </Typography>
-                        </div>
-                      </React.Fragment>
-                    );
-                  })}
-              </div>
-
+                        </Space>
+                      </div>
+                      <div className="col-span-1 bg-white mb-5 p-2 shadow-lg">
+                        <Typography
+                          variant="small"
+                          color="blue-gray"
+                          className="font-normal"
+                        >
+                          {supply}
+                        </Typography>
+                      </div>
+                      <div className="col-span-1 bg-white mb-5 p-2 shadow-lg">
+                        <Typography
+                          variant="small"
+                          color="blue-gray"
+                          className="font-normal"
+                        >
+                          {msupply}
+                        </Typography>
+                      </div>
+                      <div className="col-span-1 bg-white mb-5 p-2 rounded-tr-lg rounded-br-lg shadow-lg">
+                        <Typography
+                          as="a"
+                          href="#"
+                          variant="small"
+                          color="blue-gray"
+                          className="font-medium"
+                        >
+                          {lksupply}
+                        </Typography>
+                      </div>
+                    </React.Fragment>
+                  );
+                })}
             </div>
-            <div className="w-1/2">
-              <StatIcon />
+            </div>
+            <div className="w-[370px] lg:w-1/2">
+              <div className="hidden lg:block">
+                <StatIcon />
+              </div>
+              <div className="block lg:hidden">
+                <MStatIcon />
+              </div>
             </div>
           </div>
       </div>
 
-      <div className="w-full h-[800px] flex flex-col items-center justify-center gap-6">
+      <div className="w-full h-[1500px] lg:h-[800px] flex flex-col items-center justify-center gap-2 lg:gap-6">
         <Typography
-          className="text-sm font-bold lg:text-[51px] text-[#3A3A3A] leading-[61px]"
+          className="text-[28px] font-bold lg:text-[51px] text-[#3A3A3A] leading-[38px] lg:leading-[61px]"
         >
           Token sale stages
         </Typography>
-        <div className="w-[1460px] px-8 py-4 bg-[#F7F7FC] relative shadow-lg">
-          <div className="flex items-center">
-              <div className="flex justify-between w-full">
-                  <div className="flex flex-col items-center">
-                      <div className="w-4 h-4  bg-[#3754FF] rounded-full"></div>
-                      <div className="mt-6 w-[250px] h-[150px] bg-[#ffffff] rounded flex flex-col items-center py-4 text-center justify-center">
-                          <div className="border-b-2 border-[#3754FF] py-1">
-                              25 April - 30 April
-                          </div>
-                          <div className="mt-5">
-                              30% Bonus <br/>
-                              $0.2009/token
-                          </div>
-                      </div>
-                  </div>
-                  <div className="flex flex-col items-center">
-                      <div className="w-4 h-4  bg-[#3754FF] rounded-full"></div>
-                      <div className="mt-6 w-[250px] h-[150px] bg-[#ffffff] rounded flex flex-col items-center py-4 text-center justify-center">
-                          <div className="border-b-2 border-[#3754FF] py-1">
-                              1 may - 7 may
-                          </div>
-                          <div className="mt-5">
-                              20% Bonus <br/>
-                              $0.3009/token
-                          </div>
-                      </div>
-                  </div>
-                  <div className="flex flex-col items-center">
-                      <div className="w-4 h-4 bg-[#3754FF] rounded-full"></div>
-                      <div className="mt-6 w-[250px] h-[150px] bg-[#ffffff] rounded flex flex-col items-center py-4 text-center justify-center">
-                          <div className="border-b-2 border-[#3754FF] py-1">
-                              Sep 16 - Sep 30
-                          </div>
-                          <div className="mt-5">
-                              15% Bonus <br/>
-                              $0.4009/token
-                          </div>
-                      </div>
-                  </div>
-                  <div className="flex flex-col items-center">
-                      <div className="w-4 h-4 bg-[#3754FF] rounded-full"></div>
-                      <div className="mt-6 w-[250px] h-[150px] bg-[#ffffff] rounded flex flex-col items-center py-4 text-center justify-center">
-                          <div className="border-b-2 border-[#3754FF] py-1">
-                              8 may - 14 may
-                          </div>
-                          <div className="mt-5">
-                              10% Bonus <br/>
-                              $0.5009/token
-                          </div>
-                      </div>
-                  </div>
-                  <div className="flex flex-col items-center">
-                      <div className="w-4 h-4 bg-[#3754FF] rounded-full"></div>
-                      <div className="mt-6 w-[250px] h-[150px] bg-[#ffffff] rounded flex flex-col items-center py-4 text-center justify-center">
-                          <div className="border-b-2 border-[#3754FF] py-1">
-                              15 may - 30 may
-                          </div>
-                          <div className="mt-5">
-                              5% Bonus <br/>
-                              $0.7009/token
-                          </div>
-                      </div>
-                  </div>
-                  <div className="absolute top-[-85px] left-[149px] w-[1145px] h-full">
-                      <svg height="100%" width="100%">
-                          <line x1="0" y1="50%" x2="100%" y2="50%" style={{ stroke: '#3754FF', strokeWidth: 4, strokeDasharray: '10 20' }} />
-                      </svg>
-                  </div>
-              </div>
-          </div>
-      </div>
+
+        <div className="w-[1260px] px-2 py-4 mt-6 relative">
+            <div className="flex items-center">
+                <div className="flex-col lg:flex lg:flex-row justify-between w-full">
+                    <div className="flex flex-col items-center">
+                        <div className="w-4 h-4  bg-[#3754FF] rounded-full hidden lg:block"></div>
+                        <div className="mt-6 w-[350px] lg:w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
+                            <div className="border-b-2 border-[#3754FF] py-1">
+                                25 April - 30 April
+                            </div>
+                            <div className="mt-5">
+                                30% Bonus <br/>
+                                $0.2009/token
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <div className="w-4 h-4  bg-[#3754FF] rounded-full hidden lg:block"></div>
+                        <div className="mt-6 w-[350px] lg:w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
+                            <div className="border-b-2 border-[#3754FF] py-1">
+                                1 may - 7 may
+                            </div>
+                            <div className="mt-5">
+                                20% Bonus <br/>
+                                $0.3009/token
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <div className="w-4 h-4 bg-[#3754FF] rounded-full hidden lg:block"></div>
+                        <div className="mt-6 w-[350px] lg:w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
+                            <div className="border-b-2 border-[#3754FF] py-1">
+                                Sep 16 - Sep 30
+                            </div>
+                            <div className="mt-5">
+                                15% Bonus <br/>
+                                $0.4009/token
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <div className="w-4 h-4 bg-[#3754FF] rounded-full hidden lg:block"></div>
+                        <div className="mt-6 w-[350px] lg:w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
+                            <div className="border-b-2 border-[#3754FF] py-1">
+                                8 may - 14 may
+                            </div>
+                            <div className="mt-5">
+                                10% Bonus <br/>
+                                $0.5009/token
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <div className="w-4 h-4 bg-[#3754FF] rounded-full hidden lg:block"></div>
+                        <div className="mt-6 w-[350px] lg:w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
+                            <div className="border-b-2 border-[#3754FF] py-1">
+                                15 may - 30 may
+                            </div>
+                            <div className="mt-5">
+                                5% Bonus <br/>
+                                $0.7009/token
+                            </div>
+                        </div>
+                    </div>
+                    <div className="absolute top-[-110px] left-[125px] w-[1005px] h-full hidden lg:block">
+                        <svg height="100%" width="100%">
+                            <line x1="0" y1="50%" x2="100%" y2="50%" style={{ stroke: '#3754FF', strokeWidth: 4, strokeDasharray: '10 20' }} />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
     </div>
   );
