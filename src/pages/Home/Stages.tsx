@@ -9,18 +9,18 @@ export interface StagesProps {}
 export const Stages: FC<StagesProps> = () => {   
 
   return (
-    <div className="w-full flex flex-col h-full items-center justify-center relative container mx-auto py-28 px-9">
+    <div className="w-full flex flex-col h-full items-center justify-center relative container mx-auto py-28 px-3 lg:px-9">
         <div className="absolute left-[-40px] top-0 z-10">
             <StripPattern />
         </div>
-        <div className="w-[1316px] h-[597px] rounded-2xl bg-[#3754FF] z-20 p-10 flex items-start">
+        <div className="w-full lg:w-[1316px] h-[700px] lg:h-[597px] rounded-2xl bg-[#3754FF] z-20 p-10 flex flex-col lg:flex lg:flex-row items-start">
             <div className="flex flex-col gap-10 w-1/2">
-                <div>
-                    <Space size={0}>
-                        <div className=" flex items-center justify-center gap-2">
-                            <div className="w-[140px] h-1 bg-[#FFFFFF]"></div>
+                <div className="w-full">
+                    <Space size={0} className="w-full">
+                        <div className="w-[500px] flex items-center justify-center gap-2">
+                            <div className="w-[50px] lg:w-[140px] h-1 bg-[#FFFFFF]"></div>
                             <Typography
-                                className="text-sm font-medium lg:text-[28px] text-[#ffffff] leading-[36px]"
+                                className="text-[18px] font-medium lg:text-[28px] text-[#ffffff] leading-[36px] w-full"
                             >
                                 ICO Vrindacoin Token
                             </Typography>
@@ -28,15 +28,15 @@ export const Stages: FC<StagesProps> = () => {
                         <SIcon />
                     </Space>
                     <Typography
-                        className="text-sm font-medium lg:text-[28px] text-[#ffffff] leading-[36px]"
+                        className="text-[18px] font-medium lg:text-[28px] text-[#ffffff] leading-[36px] w-[500px]"
                     >
                         ICO Tokens details & sales Tokens
                     </Typography>
                 </div>
 
                 <div className="flex flex-col items-start gap-12">
-                    <div className="flex items-start justify-between w-[650px]">
-                        <div className="w-[343px] h-[56px] relative flex items-start"  style={{ background: 'linear-gradient(92.5deg, #FFFFFF 17.04%, #3754FF 89.43%)' }}>
+                    <div className=" flex flex-col lg:flex lg:flex-row gap-6 items-start justify-between w-[650px]">
+                        <div className="w-[300px] lg:w-[343px] h-[56px] relative flex items-start"  style={{ background: 'linear-gradient(92.5deg, #FFFFFF 17.04%, #3754FF 89.43%)' }}>
                             <Space direction="vertical" className="ml-5"
                             >
                                 <Typography
@@ -51,7 +51,7 @@ export const Stages: FC<StagesProps> = () => {
                                 </Typography>
                             </Space>
                         </div>
-                        <div className="w-[343px] h-[56px] relative flex items-start">
+                        <div className="w-[300px] h-[56px] relative flex items-start">
                             <div className="absolute left-0 top-0 h-full w-2" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #9D88D7 100%)' }}></div>
                             <Space direction="vertical" className="ml-5"
                             >
@@ -68,8 +68,8 @@ export const Stages: FC<StagesProps> = () => {
                             </Space>
                         </div>
                     </div>
-                    <div className="flex items-start justify-between w-[650px]">
-                        <div className="w-[343px] h-[56px] relative flex items-start">
+                    <div className="flex flex-col lg:flex lg:flex-row gap-6 items-start justify-between w-[650px]">
+                        <div className="w-[300px] lg:w-[343px] h-[56px] relative flex items-start">
                             <div className="absolute left-0 top-0 h-full w-2" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #9D88D7 100%)' }}></div>
                             <Space direction="vertical" className="ml-5"
                             >
@@ -85,7 +85,7 @@ export const Stages: FC<StagesProps> = () => {
                                 </Typography>
                             </Space>
                         </div>
-                        <div className="w-[343px] h-[56px] relative flex items-start">
+                        <div className="w-[300px] lg:w-[343px] h-[56px] relative flex items-start">
                             <div className="absolute left-0 top-0 h-full w-2" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #9D88D7 100%)' }}></div>
                             <Space direction="vertical" className="ml-5"
                             >
@@ -102,8 +102,8 @@ export const Stages: FC<StagesProps> = () => {
                             </Space>
                         </div>
                     </div>
-                    <div className="flex items-start justify-between w-[650px]">
-                        <div className="w-[343px] h-[56px] relative flex items-start">
+                    <div className="flex flex-col lg:flex lg:flex-row gap-6 items-start justify-between w-[650px]">
+                        <div className="w-[300px] lg:w-[343px] h-[56px] relative flex items-start">
                             <div className="absolute left-0 top-0 h-full w-2" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #9D88D7 100%)' }}></div>
                             <Space direction="vertical" className="ml-5"
                             >
@@ -119,7 +119,7 @@ export const Stages: FC<StagesProps> = () => {
                                 </Typography>
                             </Space>
                         </div>
-                        <div className="w-[343px] h-[56px] relative flex items-start">
+                        <div className="w-[300px] lg:w-[343px] h-[56px] relative flex items-start">
                             <div className="absolute left-0 top-0 h-full w-2" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #9D88D7 100%)' }}></div>
                             <Space direction="vertical" className="ml-5"
                             >
@@ -139,16 +139,18 @@ export const Stages: FC<StagesProps> = () => {
                 </div>
             </div>
             <div className="w-1/2 relative">
-                <ITO />
+                <div className="hidden lg:block">
+                    <ITO />
+                </div>
             </div>
         </div>
 
             <div className="w-[1260px] px-2 py-4 mt-6 relative">
                 <div className="flex items-center">
-                    <div className="flex justify-between w-full">
+                    <div className="flex-col lg:flex lg:flex-row justify-between w-full">
                         <div className="flex flex-col items-center">
-                            <div className="w-4 h-4  bg-[#3754FF] rounded-full"></div>
-                            <div className="mt-6 w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
+                            <div className="w-4 h-4  bg-[#3754FF] rounded-full hidden lg:block"></div>
+                            <div className="mt-6 w-[350px] lg:w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
                                 <div className="border-b-2 border-[#3754FF] py-1">
                                     25 April - 30 April
                                 </div>
@@ -159,8 +161,8 @@ export const Stages: FC<StagesProps> = () => {
                             </div>
                         </div>
                         <div className="flex flex-col items-center">
-                            <div className="w-4 h-4  bg-[#3754FF] rounded-full"></div>
-                            <div className="mt-6 w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
+                            <div className="w-4 h-4  bg-[#3754FF] rounded-full hidden lg:block"></div>
+                            <div className="mt-6 w-[350px] lg:w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
                                 <div className="border-b-2 border-[#3754FF] py-1">
                                     1 may - 7 may
                                 </div>
@@ -171,8 +173,8 @@ export const Stages: FC<StagesProps> = () => {
                             </div>
                         </div>
                         <div className="flex flex-col items-center">
-                            <div className="w-4 h-4 bg-[#3754FF] rounded-full"></div>
-                            <div className="mt-6 w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
+                            <div className="w-4 h-4 bg-[#3754FF] rounded-full hidden lg:block"></div>
+                            <div className="mt-6 w-[350px] lg:w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
                                 <div className="border-b-2 border-[#3754FF] py-1">
                                     Sep 16 - Sep 30
                                 </div>
@@ -183,8 +185,8 @@ export const Stages: FC<StagesProps> = () => {
                             </div>
                         </div>
                         <div className="flex flex-col items-center">
-                            <div className="w-4 h-4 bg-[#3754FF] rounded-full"></div>
-                            <div className="mt-6 w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
+                            <div className="w-4 h-4 bg-[#3754FF] rounded-full hidden lg:block"></div>
+                            <div className="mt-6 w-[350px] lg:w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
                                 <div className="border-b-2 border-[#3754FF] py-1">
                                     8 may - 14 may
                                 </div>
@@ -195,8 +197,8 @@ export const Stages: FC<StagesProps> = () => {
                             </div>
                         </div>
                         <div className="flex flex-col items-center">
-                            <div className="w-4 h-4 bg-[#3754FF] rounded-full"></div>
-                            <div className="mt-6 w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
+                            <div className="w-4 h-4 bg-[#3754FF] rounded-full hidden lg:block"></div>
+                            <div className="mt-6 w-[350px] lg:w-[220px] h-[200px] bg-[#F7F7FC] rounded flex flex-col items-center py-4 text-center justify-center">
                                 <div className="border-b-2 border-[#3754FF] py-1">
                                     15 may - 30 may
                                 </div>
@@ -206,7 +208,7 @@ export const Stages: FC<StagesProps> = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="absolute top-[-110px] left-[125px] w-[1005px] h-full">
+                        <div className="absolute top-[-110px] left-[125px] w-[1005px] h-full hidden lg:block">
                             <svg height="100%" width="100%">
                                 <line x1="0" y1="50%" x2="100%" y2="50%" style={{ stroke: '#3754FF', strokeWidth: 4, strokeDasharray: '10 20' }} />
                             </svg>

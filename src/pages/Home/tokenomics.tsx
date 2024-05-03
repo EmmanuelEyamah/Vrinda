@@ -11,6 +11,7 @@ import DotTech from "../../components/Ui/svg/dot-tech";
 import DotManG from "../../components/Ui/svg/dot-mang";
 import { Space } from "antd";
 import "../../index.css";
+import MStatIcon from "../../components/Ui/svg/m-stat";
 
 const TABLE_HEAD = ["Particulars", "Supply (%)", "Supply (millions)", "Supply (LAKHs)"];
  
@@ -70,18 +71,18 @@ export interface TokenomicsProps {}
 export const Tokenomics: FC<TokenomicsProps> = () => {
 
   return (
-    <div className="w-full flex flex-col items-center justify-center p-16 gap-11 h-[1300px] container mx-auto" id="tokenomics">
+    <div className="w-full flex flex-col items-center justify-center p-6 lg:p-16 gap-5 h-[1700px] lg:gap-11 lg:h-[1300px] container mx-auto" id="tokenomics">
         <div className="w-full items-center flex justify-center gap-10">
             <Typography
-                className="text-sm font-bold lg:text-[51px] text-[#3754FF] leading-[61px] w-[304px] text-center"
+                className="text-[28px] font-bold lg:text-[51px] text-[#3754FF] leading-[27px] lg:leading-[61px] w-[150px] lg:w-[304px] text-center"
             >
                 TOKENOMICS
             </Typography>
             <TokenomicsIcon />
         </div>
-        <div className="flex items-start w-full gap-6">
+        <div className="flex-col lg:flex lg:flex-row items-center justify-center lg:items-start w-full gap-6">
           <Typography
-                className="text-sm font-semibold lg:text-[38px] text-[#3A3A3A] leading-[47px]"
+                className="text-[18px] font-semibold lg:text-[38px] text-[#3A3A3A] leading-[47px]"
             >
                 1 VRINDACOIN = 0.0013 BTC
             </Typography>
@@ -90,10 +91,10 @@ export const Tokenomics: FC<TokenomicsProps> = () => {
             </AppButton>
         </div>
 
-        <div className="w-full flex items-center justify-center gap-16">
-          <div className="w-1/2 p-5 flex flex-col gap-8 h-[768px] bg-[#F7F7FC] rounded shadow-lg shadow-custom">
+        <div className="w-full flex flex-col lg:flex lg:flex-row items-center justify-center gap-16">
+          <div className=" w-full lg:w-1/2 p-2 lg:p-5 flex flex-col gap-8 h-[768px] bg-[#F7F7FC] rounded shadow-lg shadow-custom">
             <Typography
-                  className="text-sm font-normal lg:text-[28px] text-[#3A3A3A] leading-[36px] w-[582px]"
+                  className="text-[21px] font-normal lg:text-[28px] text-[#3A3A3A] lg:leading-[36px] lg:w-[582  px] leading-[28px] w-[312px]"
               >
                   VRINDACOIN HAS A TOTAL SUPPLY OF 9.6 MILLION TOKENS
               </Typography>
@@ -169,8 +170,13 @@ export const Tokenomics: FC<TokenomicsProps> = () => {
             </div>
 
           </div>
-          <div className="w-1/2">
-            <StatIcon />
+          <div className="w-full lg:w-1/2">
+            <div className="hidden lg:block">
+              <StatIcon />
+            </div>
+            <div className="block lg:hidden">
+              <MStatIcon />
+            </div>
           </div>
         </div>
     </div>

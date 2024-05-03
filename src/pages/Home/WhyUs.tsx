@@ -11,12 +11,12 @@ export interface WhyUsProps {}
 export const WhyUs: FC<WhyUsProps> = () => {
 
   return (
-    <div className="w-full flex flex-col items-start justify-center p-24 gap-11 container mx-auto">
-        <div className="ml-auto">
+    <div className="w-full flex flex-col items-start mt-20 lg:mt-0 justify-center p-4 lg:p-24 gap-11 container mx-auto">
+        <div className="ml-auto hidden lg:block">
             <HandIcon />
         </div>
         <HeaderText label="Why choose our Token"/>
-        <div className="grid grid-cols-3 gap-10 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 w-full">
             <div className="w-[350px] h-[400px] bg-[#f7f7fc] p-5 rounded-xl flex flex-col items-start justify-center gap-3">
                 <MobilePaymentIcon />
                 <Typography

@@ -7,8 +7,6 @@ import {
   List,
 } from "@material-tailwind/react";
 import {
-  Bars3Icon,
-  XMarkIcon,
   ChevronDownIcon,
   ChevronUpIcon,
 } from "@heroicons/react/24/outline";
@@ -16,6 +14,9 @@ import { AppButton } from "../../Ui/Button/Button";
 import  LogoIcon  from "../../Ui/svg/logo";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import useScrollToTop from "../../../hooks/useScrollToTop";
+import MenuBarIcon from "../../Ui/svg/menubar";
+import NavbarBG from "../../Ui/svg/navbarBG";
+import { motion } from 'framer-motion';
 
 const Links = [
   {
@@ -205,12 +206,22 @@ export const SiteNavbar: FC<SiteNavbarProps> = () => {
  
   return (
     <>
-      <div className="bg-gradient-to-r from-[#5A6FEA] to-[#213299] w-full h-[55px] flex items-center justify-center p-2 gap-2">
+      <div className="bg-gradient-to-r from-[#5A6FEA] to-[#213299] w-full h-[55px] flex items-center justify-center p-2 gap-2 relative">
         <Typography variant="h6" className="text-white">VRANDA is now live!</Typography>
         <AppButton variant="accent" size="sm">Get involved</AppButton>
       </div>
+      <motion.div
+        initial={{ y: "-100%" }}
+        animate={{ y: openNav ? 0 : "-100%" }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className={`z-[100000] w-full ${openNav ? '' : 'hidden'}`}
+      >
+        <div className="absolute left-[-80px] top-[-40px] ">
+          <NavbarBG />
+        </div>
+      </motion.div>
       <Navbar
-        className={`mx-auto max-w-full px-20 py-2 z-[10000] rounded-none ${
+        className={`mx-auto max-w-full px-5 lg:px-20 py-2 z-[10000] rounded-none ${
           isSticky ? "fixed top-0 bg-white shadow-lg z-[10000]" : ""
         }`}
       >
@@ -234,9 +245,9 @@ export const SiteNavbar: FC<SiteNavbarProps> = () => {
             onClick={() => setOpenNav(!openNav)}
           >
             {openNav ? (
-              <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+              <MenuBarIcon />
             ) : (
-              <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+              <MenuBarIcon />
             )}
           </IconButton>
         </div>

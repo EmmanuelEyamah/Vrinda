@@ -65,7 +65,7 @@ export const Hero: FC<HeroProps> = () => {
   });
 
   return (
-    <div className="relative mx-auto lg:min-h-[1300px] container">
+    <div className="relative mx-auto h-[1700px] lg:min-h-[1300px] container">
       <div className="absolute top-0 right-[50%] hidden lg:block">
         <StarIcon />
       </div>
@@ -87,7 +87,7 @@ export const Hero: FC<HeroProps> = () => {
       <div className="pt-20 flex-col items-center justify-center lg:flex lg:flex-row gap-32 lg:px-5 lg:pt-[100px]">
           <div className="flex-col w-full lg:w-1/2 items-center justify-center gap-4">
             <Typography 
-                className="font-bold text-center w-[371px] lg:text-left text-[38px] lg:text-[58px] mb-1 lg:mb-4 text-[#3A3A3A] lg:w-[759px] leading-[47px] lg:leading-[79px]"
+                className="font-bold text-center w-[381px] lg:text-left text-[38px] lg:text-[58px] mb-1 lg:mb-4 text-[#3A3A3A] lg:w-[759px] leading-[47px] lg:leading-[79px]"
             >
                 Welcome to the future of cryptocurrency with Vrinda Coin!
             </Typography>
@@ -116,7 +116,7 @@ export const Hero: FC<HeroProps> = () => {
             </Space>
           </div>
           <div className="flex-col w-full lg:w-1/2 items-center justify-center gap-4 px-5 mt-5 lg:mt-0 lg:px-5">
-            <Card className="w-full lg:max-w-[42rem] shadow-lg shadow-custom h-[775px] bg-[#F7F7FC]">
+            <Card className="w-full lg:max-w-[42rem] shadow-lg shadow-custom h-[805px] lg:h-[775px] bg-[#F7F7FC]">
               <CardBody>
                 <Typography
                    className="text-sm font-normal lg:text-[13px] mb-1 lg:mb-4 text-[#3A3A3A] w-[80px] leading-[17px] ml-auto"
@@ -204,14 +204,14 @@ export const Hero: FC<HeroProps> = () => {
 
                   { selectedBtn === "eth" && 
                     (
-                      <div className="flex items-center justify-between w-full gap-5">
+                      <div className=" flex flex-col lg:flex lg:flex-row items-center justify-between w-full gap-5">
                         <Space direction="vertical" >
                           <Typography
                             className="text-sm font-normal lg:text-[12px] text-[#3A3A3A] leading-[18px]"
                           >
                             ETH you pay
                           </Typography>
-                          <div className="lg:w-[250px] w-[100px]">
+                          <div className="lg:w-[250px] w-[325px]">
                             <Input type="number" label="Enter amount" crossOrigin={undefined} size="lg" className="bg-[rgba(58, 58, 58, 0.05)]"/>
                           </div>
                         </Space>
@@ -221,7 +221,7 @@ export const Hero: FC<HeroProps> = () => {
                           >
                             VRINDACOIN you receive
                           </Typography>
-                          <div className="lg:w-[250px] w-[100px]">
+                          <div className="lg:w-[250px] w-[325px]">
                             <Input type="number" label="" crossOrigin={undefined} size="lg" className="bg-[rgba(58, 58, 58, 0.05)]"/>
                           </div>
                         </Space>
@@ -230,14 +230,14 @@ export const Hero: FC<HeroProps> = () => {
                   }
                   { selectedBtn === "usdt" && 
                     (
-                      <div className="flex items-center justify-between w-full gap-5">
+                      <div className=" flex flex-col lg:flex lg:flex-row items-center justify-between w-full gap-5">
                         <Space direction="vertical" >
                           <Typography
                             className="text-sm font-normal lg:text-[12px] text-[#3A3A3A] leading-[18px]"
                           >
                             USDT you pay
                           </Typography>
-                          <div className="w-[250px]">
+                          <div className="lg:w-[250px] w-[325px]">
                             <Input type="number" label="Enter amount" crossOrigin={undefined} size="lg" className="bg-[rgba(58, 58, 58, 0.05)]"/>
                           </div>
                         </Space>
@@ -247,7 +247,7 @@ export const Hero: FC<HeroProps> = () => {
                           >
                             VRINDACOIN you receive
                           </Typography>
-                          <div className="w-[250px]">
+                          <div className="lg:w-[250px] w-[325px]">
                             <Input type="number" label="" crossOrigin={undefined} size="lg" className="bg-[rgba(58, 58, 58, 0.05)]"/>
                           </div>
                         </Space>
@@ -256,14 +256,14 @@ export const Hero: FC<HeroProps> = () => {
                   }
                   { selectedBtn === "card" && 
                     (
-                      <div className="flex items-center justify-between w-full gap-5">
+                      <div className=" flex flex-col lg:flex lg:flex-row items-center justify-between w-full gap-5">
                         <Space direction="vertical" >
                           <Typography
                             className="text-sm font-normal lg:text-[12px] text-[#3A3A3A] leading-[18px]"
                           >
                             AMOUNT you pay
                           </Typography>
-                          <div className="w-[250px]">
+                          <div className="lg:w-[250px] w-[325px]">
                             <Input type="number" label="Enter amount" crossOrigin={undefined} size="lg" className="bg-[rgba(58, 58, 58, 0.05)]"/>
                           </div>
                         </Space>
@@ -273,7 +273,7 @@ export const Hero: FC<HeroProps> = () => {
                           >
                             VRINDACOIN you receive
                           </Typography>
-                          <div className="w-[250px]">
+                          <div className="lg:w-[250px] w-[325px]">
                             <Input type="number" label="" crossOrigin={undefined} size="lg" className="bg-[rgba(58, 58, 58, 0.05)]"/>
                           </div>
                         </Space>

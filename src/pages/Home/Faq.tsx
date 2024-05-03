@@ -3,6 +3,8 @@ import PatternBG from "../../components/Ui/svg/patternBg";
 import { Typography } from "@material-tailwind/react";
 import FaqBG from "../../components/Ui/svg/faq";
 import { AccordionComponent } from "../../components/Ui/Accordian/accordian";
+import MFaqBG from "../../components/Ui/svg/m-faq";
+import MPatternBG from "../../components/Ui/svg/m-patternBg";
 
 export interface FAQProps {}
 export const FAQ: FC<FAQProps> = () => {
@@ -28,30 +30,33 @@ export const FAQ: FC<FAQProps> = () => {
     ];
 
   return (
-    <div className="relative w-full bg-gradient-to-b from-[#F7F7FC] to-[#FFFFFF] h-[700px] flex items-start flex-col justify-normal container mx-auto">
-        <div className="absolute top-[-127px] z-[-1] left-0">
+    <div className="relative w-full bg-gradient-to-b from-[#F7F7FC] to-[#FFFFFF] h-[1000px] lg:h-[700px] flex items-start flex-col justify-normal container mx-auto">
+        <div className="absolute top-[-127px] z-[-1] left-0 hidden lg:block">
             <PatternBG />
         </div>
+        <div className="absolute top-[-27px] z-[-100] left-0 lg:hidden">
+            <MPatternBG />
+        </div>
 
-        <div className="p-5 absolute top-[-90px]">
+        <div className="p-2 lg:p-5 absolute top-[-20px] lg:top-[-90px]">
             <div className="w-[510px] flex items-center justify-start gap-2">
-                <div className="w-[140px] h-1 bg-[#3754FF]"></div>
+                <div className="w-[50px] lg:w-[140px] h-1 bg-[#3754FF]"></div>
                 <Typography
-                    className="text-sm font-medium lg:text-[28px] text-[#3A3A3A] leading-[36px]"
+                    className="text-[21px] font-medium lg:text-[28px] text-[#3A3A3A] leading-[27px] lg:leading-[36px]"
                 >
                 FAQS
                 </Typography>
             </div>
             <Typography
-                className="text-sm font-normal lg:text-[28px]  text-[#3A3A3A] leading-[36px] w-[629px]"
+                className="text-[21px] font-normal lg:text-[28px]  text-[#3A3A3A] leading-[27px] lg:leading-[36px] w-[629px]"
             >
                 Frequently asked questions
             </Typography>
         </div>
 
-        <div className="w-full flex items-start gap-8 mt-24">
-            <div className="w-1/2 flex flex-col gap-5 p-20">
-                <div className="w-full flex items-center gap-6">
+        <div className="w-full flex flex-col lg:flex lg:flex-row items-start gap-8 mt-24">
+            <div className="w-1/2 flex flex-col gap-5 p-4 lg:p-20">
+                <div className="w-[500px] lg:w-full flex items-center gap-6">
                     {buttons.map(button => (
                         <button
                         key={button.id}
@@ -65,14 +70,19 @@ export const FAQ: FC<FAQProps> = () => {
                     ))}
                 </div>
 
-                <div className="mt-5 w-[530px]">
+                <div className="mt-5 w-[360px] lg:w-[530px]">
                     { selectedBtn === "general" &&  (
                         <AccordionComponent items={items}/>
                     )}
                 </div>
             </div>
-            <div className="w-1/2">
-                <FaqBG />
+            <div className="w-full lg:w-1/2">
+                <div className="hidden lg:block">
+                    <FaqBG />
+                </div>
+                <div className="block lg:hidden">
+                    <MFaqBG />
+                </div>
             </div>
         </div>
         
