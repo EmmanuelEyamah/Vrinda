@@ -20,24 +20,24 @@ export const Blogs: FC<BlogsProps> = () => {
 
   return (
     <div className="w-full h-full container mx-auto">
-      <div className="p-20">
+      <div className="p-7 lg:p-20">
         <div className="w-full rounded-bl-2xl rounded-br-2xl h-[600px] bg-gradient-to-b from-[#FFFFFF] to-[#F7F7FC] relative overflow-hidden flex flex-col items-center justify-center gap-6">
-            <div className="absolute top-[80px] left-[230px]">
+            <div className="absolute top-[80px] left-[10px] lg:left-[230px]">
               <OutlinedNote />
             </div>
             <div className="absolute top-[180px] right-[30%]">
               <OutlineMessage />
             </div>
-            <div className="absolute top-[200px] right-[10%]">
+            <div className="absolute bottom-0 lg:top-[200px] right-[10%]">
               <OutlinedWifi />
             </div>
             <Typography
-                className="text-sm font-bold lg:text-[51px] text-[#3754FF] w-[945px] leading-[61px] text-center"
+                className="text-[38px] font-bold lg:text-[51px] text-[#3754FF] w-[945px] leading-[47px] lg:leading-[61px] text-center"
             >
               Our Blog
             </Typography>
             <Typography
-                className="text-sm font-normal lg:text-[21px] text-[#3A3A3A] w-[1011px] leading-[27px] text-center"
+                className="text-[16px] font-normal lg:text-[21px] text-[#3A3A3A] w-[361px] lg:w-[1011px] leading-[27px] text-center"
             >
               Welcome to the Vrindacoin Blog: Unveiling the Future of Finance, One Post at a Time! <br />
               Step into a world where innovation meets opportunity, where the boundaries of traditional finance dissolve, and the possibilities of decentralized technology unfold. Our blog is your exclusive gateway to the latest insights, trends, and developments shaping the crypto landscape and propelling Vrindacoin to the forefront of digital finance.
@@ -45,13 +45,13 @@ export const Blogs: FC<BlogsProps> = () => {
         </div>
       </div>
 
-      <div className="w-full h-[2200px] pt-52 px-32 flex items-center justify-center gap-16">
-        <div className="w-[60%] h-full flex flex-col items-start gap-10">
-          <div className="w-[670px] h-[426px] bg-[#F7F7FC] rounded-2xl p-9 flex gap-4">
-            <div className="w-1/2 h-full">
+      <div className="w-full h-[4000px] pt-52 p-6 lg:px-32 flex-col flex lg:flex lg:flex-row items-center justify-center gap-16">
+        <div className="w-full lg:w-[60%] h-full flex flex-col items-start gap-10">
+          <div className="w-[368px] lg:w-[670px] h-[801px] lg:h-[426px] bg-[#F7F7FC] rounded-2xl p-9 flex-col flex lg:flex lg:flex-row gap-4">
+            <div className="w-full lg:w-1/2 h-full">
               <img src="assets/blog3.png"/>
             </div>
-            <div className="w-1/2 flex flex-col gap-7">
+            <div className="w-full lg:w-1/2 flex flex-col gap-7">
               <div className=" flex gap-3">
                 <Space size={2}>
                   <LiTimeIcon />
@@ -79,7 +79,7 @@ export const Blogs: FC<BlogsProps> = () => {
                 </Space>
               </div>
               <Typography
-                  className="text-sm font-semibold lg:text-[28px] text-[#3A3A3A] w-[371px] leading-[36px]"
+                  className="text-[21px] font-semibold lg:text-[28px] text-[#3A3A3A] w-[289px] lg:w-[371px] leading-[27px] lg:leading-[36px]"
               >
                 The Power of Blockchain don't Miss Out on Our ICO
               </Typography>
@@ -110,11 +110,11 @@ export const Blogs: FC<BlogsProps> = () => {
               </div>
             </div>
           </div>
-          <div className="w-[670px] h-[426px] bg-[#F7F7FC] rounded-2xl p-9 flex gap-4">
-            <div className="w-1/2 h-full">
+          <div className="w-[368px] lg:w-[670px] h-[801px] lg:h-[426px] bg-[#F7F7FC] rounded-2xl p-9 flex-col flex lg:flex lg:flex-row gap-4">
+            <div className="w-full lg:w-1/2 h-full">
               <img src="assets/blog2.png"/>
             </div>
-            <div className="w-1/2 flex flex-col gap-7">
+            <div className="w-full lg:w-1/2 flex flex-col gap-7">
               <div className=" flex gap-3">
                 <Space size={2}>
                   <LiTimeIcon />
@@ -142,7 +142,7 @@ export const Blogs: FC<BlogsProps> = () => {
                 </Space>
               </div>
               <Typography
-                  className="text-sm font-semibold lg:text-[28px] text-[#3A3A3A] w-[371px] leading-[36px]"
+                  className="text-[21px] font-semibold lg:text-[28px] text-[#3A3A3A] w-[289px] lg:w-[371px] leading-[27px] lg:leading-[36px]"
               >
                 The Power of Blockchain don't Miss Out on Our ICO
               </Typography>
@@ -173,7 +173,7 @@ export const Blogs: FC<BlogsProps> = () => {
               </div>
             </div>
           </div>
-          <div className="w-[670px] h-[746px] bg-[#F7F7FC] rounded-2xl p-9 flex flex-col gap-4">
+          <div className="w-[670px] h-[746px] bg-[#F7F7FC] rounded-2xl p-9 lg:flex flex-col gap-4 hidden">
             <div className="w-full h-full">
               <img src="assets/blog1.png"/>
             </div>
@@ -238,8 +238,8 @@ export const Blogs: FC<BlogsProps> = () => {
             </div>
           </div>
         </div>
-        <div className="w-[40%] h-full flex flex-col items-start gap-10">
-          <div className="w-[405px] h-[173px] bg-[#F7F7FC] rounded-xl p-10">
+        <div className="w-full lg:w-[40%] h-full flex flex-col items-start gap-10">
+          <div className="w-[361px] lg:w-[405px] h-[173px] bg-[#F7F7FC] rounded-xl p-10">
             <Typography
                 className="text-sm font-semibold lg:text-[21px] text-[#3A3A3A] leading-[27px] mb-4"
             >
@@ -247,7 +247,7 @@ export const Blogs: FC<BlogsProps> = () => {
             </Typography>
             <Input label="Search" icon={<SearchOutlined />} crossOrigin={undefined}/>
           </div>
-          <div className="w-[405px] h-[331px] bg-[#F7F7FC] rounded-xl p-10">
+          <div className="w-[361px] lg:w-[405px] h-[331px] bg-[#F7F7FC] rounded-xl p-10">
             <Typography
                 className="text-sm font-semibold lg:text-[21px] text-[#3A3A3A] leading-[27px] mb-4"
             >
@@ -264,7 +264,7 @@ export const Blogs: FC<BlogsProps> = () => {
               Vrindacoin <br />
             </Typography>
           </div>
-          <div className="w-[405px] h-[390px] bg-[#F7F7FC] rounded-xl p-10">
+          <div className="w-[361px] lg:w-[405px] h-[390px] bg-[#F7F7FC] rounded-xl p-10">
             <Typography
                 className="text-sm font-semibold lg:text-[21px] text-[#3A3A3A] leading-[27px] mb-4"
             >
@@ -317,7 +317,7 @@ export const Blogs: FC<BlogsProps> = () => {
             </div>
           </div>
 
-          <div className="w-[405px] h-[410px] bg-[#F7F7FC] rounded-xl p-10">
+          <div className="w-[361px] lg:w-[405px] h-[410px] bg-[#F7F7FC] rounded-xl p-10">
             <Typography
                 className="text-sm font-semibold lg:text-[21px] text-[#3A3A3A] leading-[27px] mb-4"
             >
@@ -359,7 +359,7 @@ export const Blogs: FC<BlogsProps> = () => {
             </div>
           </div>
 
-          <div className="w-[405px] flex items-center justify-start gap-2">
+          <div className="w-[361px] lg:w-[405px] flex items-center justify-start gap-2">
                 <Typography
                     className="text-sm font-medium lg:text-[16px] text-[#3A3A3A] leading-[24px]"
                 >
