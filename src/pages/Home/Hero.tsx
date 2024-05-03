@@ -87,7 +87,7 @@ export const Hero: FC<HeroProps> = () => {
       <div className="pt-20 flex-col items-center justify-center lg:flex lg:flex-row gap-32 lg:px-5 lg:pt-[100px]">
           <div className="flex-col w-full lg:w-1/2 items-center justify-center gap-4">
             <Typography 
-                className="font-bold text-center w-[381px] lg:text-left text-[38px] lg:text-[58px] mb-1 lg:mb-4 text-[#3A3A3A] lg:w-[759px] leading-[47px] lg:leading-[79px]"
+                className="font-bold text-center w-[401px] lg:text-left text-[38px] lg:text-[58px] mb-1 lg:mb-4 text-[#3A3A3A] lg:w-[759px] leading-[47px] lg:leading-[79px]"
             >
                 Welcome to the future of cryptocurrency with Vrinda Coin!
             </Typography>

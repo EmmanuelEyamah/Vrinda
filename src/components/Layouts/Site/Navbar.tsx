@@ -17,6 +17,7 @@ import useScrollToTop from "../../../hooks/useScrollToTop";
 import MenuBarIcon from "../../Ui/svg/menubar";
 import NavbarBG from "../../Ui/svg/navbarBG";
 import { motion } from 'framer-motion';
+import CloseBarIcon from "../../Ui/svg/closebar";
 
 const Links = [
   {
@@ -61,7 +62,7 @@ export interface NavProps {
 
 const NavItems: FC<NavProps> = ({ label, active }) =>  {
   return (
-    <div className={`py-2 pr-4 ${active ? 'gradient-text' : 'text-[#3A3A3A]'}`}>
+    <div className={`py-2 pr-1 lg:pr-4 ${active ? 'gradient-text' : 'text-[#3A3A3A]'}`}>
         <label>
             {label}
         </label>
@@ -80,10 +81,13 @@ const useMenuActive = (route: string): boolean  => {
 
   return isActive;
 };
+interface NavListProps {
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
-function NavList() {
+function NavList({ setOpen }: NavListProps) {
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
+    <List className="flex-row p-1">
       {Links.map((link, index) => {
             const isActive = useMenuActive(link.route)
             return (
@@ -111,6 +115,7 @@ function NavList() {
                               });
                             }
                           }
+                          setOpen(false)
                         }}
                       >
                         <NavItems label={link.label} active={isActive} />
@@ -160,12 +165,12 @@ const DropdownLink: FC<DropdownLinkProps> = ({ link, isActive }) => {
         )}
       </div>
       {showDropdown && (
-        <div className="absolute top-14 bg-white border rounded shadow-md">
+        <div className="px-2 lg:px-0 mt-3 lg:mt-0 absolute left-0 lg:left-[40%] top-26 lg:top-14 bg-transparent lg:bg-white g:border rounded-none lg:rounded shadow-none lg:shadow-md flex lg:flex-col lg:flex">
           {link.dropdown?.map((item, index) => (
             <div
               key={index}
               onClick={() => handleDropdownItemClick(item.route)} // Modify this line
-              className="block py-2 px-4 text-[#3A3A3A] hover:gradient-text cursor-pointer" // Add cursor-pointer
+              className="px-1 py-2 lg:px-4 text-[rgba(58, 58, 58, 0.2)] lg:text-[#3A3A3A] hover:gradient-text cursor-pointer" // Add cursor-pointer
             >
               {item.label}
             </div>
@@ -212,12 +217,30 @@ export const SiteNavbar: FC<SiteNavbarProps> = () => {
       </div>
       <motion.div
         initial={{ y: "-100%" }}
-        animate={{ y: openNav ? 0 : "-100%" }}
+        animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className={`z-[100000] w-full ${openNav ? '' : 'hidden'}`}
+        className={`fixed top-0 left-0 z-[100000] w-full p-1 ${openNav ? '' : 'hidden'}`}
       >
-        <div className="absolute left-[-80px] top-[-40px] ">
+        <div className="absolute left-[-80px] top-[-40px] z-[-1]">
           <NavbarBG />
+        </div>
+        <div className="flex items-center justify-between">
+          <LogoIcon />
+          <IconButton
+            variant="text"
+            color="blue-gray"
+            className="lg:hidden"
+            onClick={() => {setOpenNav(!openNav) }}
+          >
+            {openNav ? (
+              <CloseBarIcon />
+            ) : (
+              <CloseBarIcon />
+            )}
+          </IconButton>
+        </div>
+        <div>
+          <NavList setOpen={setOpenNav}/>
         </div>
       </motion.div>
       <Navbar
@@ -228,7 +251,7 @@ export const SiteNavbar: FC<SiteNavbarProps> = () => {
         <div className="flex items-center justify-between text-blue-gray-900">
             <LogoIcon />
           <div className="hidden lg:block">
-            <NavList />
+            <NavList setOpen={setOpenNav}/>
           </div>
           <div className="hidden gap-5 lg:flex">
             <AppButton variant="primary">
@@ -242,7 +265,7 @@ export const SiteNavbar: FC<SiteNavbarProps> = () => {
             variant="text"
             color="blue-gray"
             className="lg:hidden"
-            onClick={() => setOpenNav(!openNav)}
+            onClick={() => {setOpenNav(!openNav) }}
           >
             {openNav ? (
               <MenuBarIcon />
