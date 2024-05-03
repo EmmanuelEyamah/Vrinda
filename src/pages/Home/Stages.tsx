@@ -52,8 +52,8 @@ export const Stages: FC<StagesProps> = () => {
                             </Space>
                         </div>
                         <div className="w-[300px] h-[56px] relative flex items-start">
-                            <div className="absolute left-0 top-0 h-full w-2" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #9D88D7 100%)' }}></div>
-                            <Space direction="vertical" className="ml-5"
+                            <div className="absolute left-0 top-0 h-full w-1" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #9D88D7 100%)' }}></div>
+                            <Space direction="vertical" className="ml-3"
                             >
                                 <Typography
                                     className="text-sm font-normal lg:text-[21px] text-[#ffffff] leading-[27px]"
@@ -70,8 +70,8 @@ export const Stages: FC<StagesProps> = () => {
                     </div>
                     <div className="flex flex-col lg:flex lg:flex-row gap-6 items-start justify-between w-[650px]">
                         <div className="w-[300px] lg:w-[343px] h-[56px] relative flex items-start">
-                            <div className="absolute left-0 top-0 h-full w-2" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #9D88D7 100%)' }}></div>
-                            <Space direction="vertical" className="ml-5"
+                            <div className="absolute left-0 top-0 h-full w-1" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #9D88D7 100%)' }}></div>
+                            <Space direction="vertical" className="ml-3"
                             >
                                 <Typography
                                     className="text-sm font-normal lg:text-[21px] text-[#ffffff] leading-[27px]"
@@ -86,8 +86,8 @@ export const Stages: FC<StagesProps> = () => {
                             </Space>
                         </div>
                         <div className="w-[300px] lg:w-[343px] h-[56px] relative flex items-start">
-                            <div className="absolute left-0 top-0 h-full w-2" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #9D88D7 100%)' }}></div>
-                            <Space direction="vertical" className="ml-5"
+                            <div className="absolute left-0 top-0 h-full w-1" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #9D88D7 100%)' }}></div>
+                            <Space direction="vertical" className="ml-3"
                             >
                                 <Typography
                                     className="text-sm font-normal lg:text-[21px] text-[#ffffff] leading-[27px]"
@@ -104,8 +104,8 @@ export const Stages: FC<StagesProps> = () => {
                     </div>
                     <div className="flex flex-col lg:flex lg:flex-row gap-6 items-start justify-between w-[650px]">
                         <div className="w-[300px] lg:w-[343px] h-[56px] relative flex items-start">
-                            <div className="absolute left-0 top-0 h-full w-2" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #9D88D7 100%)' }}></div>
-                            <Space direction="vertical" className="ml-5"
+                            <div className="absolute left-0 top-0 h-full w-1" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #9D88D7 100%)' }}></div>
+                            <Space direction="vertical" className="ml-3"
                             >
                                 <Typography
                                     className="text-sm font-normal lg:text-[21px] text-[#ffffff] leading-[27px]"
@@ -120,8 +120,8 @@ export const Stages: FC<StagesProps> = () => {
                             </Space>
                         </div>
                         <div className="w-[300px] lg:w-[343px] h-[56px] relative flex items-start">
-                            <div className="absolute left-0 top-0 h-full w-2" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #9D88D7 100%)' }}></div>
-                            <Space direction="vertical" className="ml-5"
+                            <div className="absolute left-0 top-0 h-full w-1" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #9D88D7 100%)' }}></div>
+                            <Space direction="vertical" className="ml-3"
                             >
                                 <Typography
                                     className="text-sm font-normal lg:text-[21px] text-[#ffffff] leading-[27px]"
@@ -208,9 +208,9 @@ export const Stages: FC<StagesProps> = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="absolute top-[-110px] left-[125px] w-[1005px] h-full hidden lg:block">
+                        <div className="absolute top-[-110px] left-[117px] w-[1025px] h-full hidden lg:block">
                             <svg height="100%" width="100%">
-                                <line x1="0" y1="50%" x2="100%" y2="50%" style={{ stroke: '#3754FF', strokeWidth: 4, strokeDasharray: '10 20' }} />
+                                <line x1="0" y1="50%" x2="100%" y2="50%" style={{ stroke: '#3754FF', strokeWidth: 3, strokeDasharray: '8 10' }} />
                             </svg>
                         </div>
                     </div>

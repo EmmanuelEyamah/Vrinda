@@ -94,7 +94,7 @@ export const Tokenomics: FC<TokenomicsProps> = () => {
         <div className="w-full flex flex-col lg:flex lg:flex-row items-center justify-center gap-16">
           <div className=" w-full lg:w-1/2 p-2 lg:p-5 flex flex-col gap-8 h-[768px] bg-[#F7F7FC] rounded shadow-lg shadow-custom">
             <Typography
-                  className="text-[21px] font-normal lg:text-[28px] text-[#3A3A3A] lg:leading-[36px] lg:w-[582  px] leading-[28px] w-[312px]"
+                  className="text-[21px] font-normal lg:text-[28px] text-[#3A3A3A] lg:leading-[36px] lg:w-[582px] leading-[28px] w-[312px]"
               >
                   VRINDACOIN HAS A TOTAL SUPPLY OF 9.6 MILLION TOKENS
               </Typography>
@@ -123,7 +123,7 @@ export const Tokenomics: FC<TokenomicsProps> = () => {
       
                   return (
                     <React.Fragment key={index}>
-                      <div className="col-span-1 bg-white mb-5 p-2 rounded-tl-lg rounded-bl-lg shadow-lg">
+                      <div className="col-span-1 bg-white mb-5 p-2 rounded-tl-lg rounded-bl-lg shadow-md">
                         <Space>
                           {icon}
                           <Typography
@@ -135,7 +135,7 @@ export const Tokenomics: FC<TokenomicsProps> = () => {
                           </Typography>
                         </Space>
                       </div>
-                      <div className="col-span-1 bg-white mb-5 p-2 shadow-lg">
+                      <div className="col-span-1 bg-white mb-5 p-2 shadow-md">
                         <Typography
                           variant="small"
                           color="blue-gray"
@@ -144,7 +144,7 @@ export const Tokenomics: FC<TokenomicsProps> = () => {
                           {supply}
                         </Typography>
                       </div>
-                      <div className="col-span-1 bg-white mb-5 p-2 shadow-lg">
+                      <div className="col-span-1 bg-white mb-5 p-2 shadow-md">
                         <Typography
                           variant="small"
                           color="blue-gray"
@@ -153,7 +153,7 @@ export const Tokenomics: FC<TokenomicsProps> = () => {
                           {msupply}
                         </Typography>
                       </div>
-                      <div className="col-span-1 bg-white mb-5 p-2 rounded-tr-lg rounded-br-lg shadow-lg">
+                      <div className="col-span-1 bg-white mb-5 p-2 rounded-tr-lg rounded-br-lg shadow-md">
                         <Typography
                           as="a"
                           href="#"

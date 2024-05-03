@@ -169,8 +169,8 @@ const DropdownLink: FC<DropdownLinkProps> = ({ link, isActive }) => {
           {link.dropdown?.map((item, index) => (
             <div
               key={index}
-              onClick={() => handleDropdownItemClick(item.route)} // Modify this line
-              className="px-1 py-2 lg:px-4 text-[rgba(58, 58, 58, 0.2)] lg:text-[#3A3A3A] hover:gradient-text cursor-pointer" // Add cursor-pointer
+              onClick={() => handleDropdownItemClick(item.route)}
+              className="px-1 py-2 font-normal lg:px-4 text-[rgba(58, 58, 58, 0.2)] lg:text-[#3A3A3A] hover:gradient-text cursor-pointer" 
             >
               {item.label}
             </div>
@@ -244,8 +244,8 @@ export const SiteNavbar: FC<SiteNavbarProps> = () => {
         </div>
       </motion.div>
       <Navbar
-        className={`mx-auto max-w-full px-5 lg:px-20 py-2 z-[10000] rounded-none ${
-          isSticky ? "fixed top-0 bg-white shadow-lg z-[10000]" : ""
+        className={`mx-auto max-w-full px-5 lg:px-20 shadow-none py-2 z-[10000] rounded-none bg-[#F7F7FCB2] ${
+          isSticky ? "fixed top-0 z-[10000]" : ""
         }`}
       >
         <div className="flex items-center justify-between text-blue-gray-900">

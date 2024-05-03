@@ -29,7 +29,7 @@ export const Blog: FC<BlogProps> = () => {
         </Typography>
         
         <div className="mt-6 flex-col flex lg:flex lg:flex-row items-center justify-center gap-10">
-            <Card className="w-96">
+            <Card className="w-96 shadow-xl">
                 <CardHeader floated={false} className="h-full">
                     <img src="/assets/blog.png" alt="blog-image" />
                 </CardHeader>
@@ -48,7 +48,7 @@ export const Blog: FC<BlogProps> = () => {
                     </Typography>
                 </CardFooter>
             </Card>
-            <Card className="w-96">
+            <Card className="w-96 shadow-xl">
                 <CardHeader floated={false} className="h-full">
                     <img src="/assets/blog.png" alt="blog-image" />
                 </CardHeader>
@@ -67,7 +67,7 @@ export const Blog: FC<BlogProps> = () => {
                     </Typography>
                 </CardFooter>
             </Card>
-            <Card className="w-96">
+            <Card className="w-96 shadow-xl">
                 <CardHeader floated={false} className="h-full">
                     <img src="/assets/blog.png" alt="blog-image" />
                 </CardHeader>

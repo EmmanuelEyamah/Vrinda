@@ -69,7 +69,7 @@ export const SiteFooter: FC<SiteFooterProps> = () => {
         <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
           <Typography
             variant="small"
-            className="mb-4 text-center font-normal text-[#3754FF] md:mb-0"
+            className="mb-4 text-center sofia-pro-bold-italic text-[#3754FF] md:mb-0"
           >
             &copy; {currentYear}, Vrindacoin Ltd
           </Typography>
