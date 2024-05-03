@@ -219,7 +219,7 @@ export const SiteNavbar: FC<SiteNavbarProps> = () => {
         initial={{ y: "-100%" }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className={`fixed top-0 left-0 z-[100000] w-full p-1 ${openNav ? '' : 'hidden'}`}
+        className={`fixed top-0 left-0 z-[100000] w-full ${openNav ? '' : 'hidden'}`}
       >
         <div className="absolute left-[-80px] top-[-40px] z-[-1]">
           <NavbarBG />
