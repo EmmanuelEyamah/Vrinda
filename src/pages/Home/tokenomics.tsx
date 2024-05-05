@@ -72,7 +72,7 @@ export const Tokenomics: FC<TokenomicsProps> = () => {
 
   return (
     <div className="w-full flex flex-col items-center justify-center p-6 lg:p-16 gap-5 h-[1700px] lg:gap-11 lg:h-[1300px] container mx-auto" id="tokenomics">
-        <div className="w-full items-center flex justify-center gap-10">
+        <div className="w-full items-center flex justify-center gap-12 lg:gap-10">
             <Typography
                 className="text-[28px] font-bold lg:text-[51px] text-[#3754FF] leading-[27px] lg:leading-[61px] w-[150px] lg:w-[304px] text-center"
             >

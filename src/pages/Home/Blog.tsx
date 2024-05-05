@@ -17,7 +17,7 @@ export const Blog: FC<BlogProps> = () => {
   return (
     <div className="w-full flex flex-col items-center justify-start relative gap-5 h-[1900px] lg:h-[1000px] container mx-auto">
         <Typography
-            className="text-[21] font-bold lg:text-[28px] text-[#3754FF] leading-[27px] lg:leading-[36px] w-[195px] lg:w-[280px]"
+            className="text-[28px] font-bold lg:text-[28px] text-[#3754FF] leading-[27px] lg:leading-[36px] lg:w-[280px]"
         >
             Recent Blogs Posts
         </Typography>

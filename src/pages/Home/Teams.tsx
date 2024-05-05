@@ -9,14 +9,14 @@ export interface TeamsProps {}
 export const Teams: FC<TeamsProps> = () => {
 
   return (
-    <div className="w-full flex flex-col items-center justify-start relative gap-5 h-[2300px] lg:h-[1600px] container mx-auto">
+    <div className="w-full flex flex-col items-center justify-start relative gap-5 lg:gap-7 h-[2300px] lg:h-[1600px] container mx-auto">
         <Typography
-            className="text-[16px] font-bold lg:text-[28px] text-[#3754FF] leading-[24px] lg:leading-[36px] w-[98px] lg:w-[198px]"
+            className="text-[28px] font-bold lg:text-[28px] text-[#3754FF] leading-[24px] lg:leading-[36px] lg:w-[198px]"
         >
             Team players
         </Typography>
          <Typography
-            className="text-[21px] font-normal lg:text-[51px] text-[#3A3A3A] leading-[27px] lg:leading-[61px] w-[237px] lg:w-[645px]"
+            className="text-[21px] font-normal lg:text-[51px] text-[#3A3A3A] leading-[27px] lg:leading-[61px] text-center lg:w-[645px]"
         >
             Meet our team members
         </Typography>
@@ -37,7 +37,7 @@ export const Teams: FC<TeamsProps> = () => {
         </Typography>
 
         <div className="mt-5 flex flex-col w-full items-center gap-8">
-            <div className="grid grid-cols-2 lg:grid-cols-3 lg:gap-12">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-6 lg:gap-12">
                 <div className="flex flex-col items-center w-[220px]">
                     <img src="/assets/team1.png" alt="team-img" className="mb-3"/>
                     <Typography

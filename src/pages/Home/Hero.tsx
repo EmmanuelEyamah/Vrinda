@@ -97,7 +97,7 @@ export const Hero: FC<HeroProps> = () => {
                 Crypto and Airdrops
             </Typography>
             <Typography 
-                className="text-[16px] text-center lg:text-left font-normal lg:text-[21px] mb-1 lg:mb-4 text-[#3A3A3A] lg:w-[444px]  w-[367px] leading-[24px] lg:leading-[34px]"
+                className="text-[16px] text-center w-[411px] lg:text-left font-normal lg:text-[21px] mb-1 lg:mb-4 text-[#3A3A3A] lg:w-[444px] leading-[24px] lg:leading-[34px]"
             >
                 Discover the power of cryptocurrencies and blockchain technology
             </Typography>
