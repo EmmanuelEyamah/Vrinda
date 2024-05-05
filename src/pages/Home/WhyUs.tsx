@@ -20,12 +20,12 @@ export const WhyUs: FC<WhyUsProps> = () => {
             <div className="w-[350px] h-[400px] bg-[#f7f7fc] p-5 rounded-xl flex flex-col items-start justify-center gap-3">
                 <MobilePaymentIcon />
                 <Typography
-                    className="text-sm font-semibold lg:text-[30px] text-[#3A3A3A] leading-[47px] w-[304px]"
+                    className="text-[28px] font-semibold lg:text-[30px] text-[#3A3A3A] leading-[47px] w-[304px]"
                 >
                     Mobile payment made easy
                 </Typography>
                 <Typography
-                    className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] leading-[24px] w-[207px]"
+                    className="font-normal lg:text-[16px] text-[#3A3A3A] leading-[24px] w-[207px]"
                 >
                     You can use a mobile device to pay with simple steps
                 </Typography>
@@ -33,12 +33,12 @@ export const WhyUs: FC<WhyUsProps> = () => {
             <div className="w-[350px] h-[400px] bg-[#f7f7fc] p-5 rounded-xl flex flex-col items-start justify-center gap-3">
                 <FreeTFIcon />
                 <Typography
-                    className="text-sm font-semibold lg:text-[30px] text-[#3A3A3A] leading-[47px] w-[304px]"
+                    className="text-[28px]  font-semibold lg:text-[30px] text-[#3A3A3A] leading-[47px] w-[304px]"
                 >
                     Life time free transaction
                 </Typography>
                 <Typography
-                    className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] leading-[24px] w-[207px]"
+                    className="font-normal lg:text-[16px] text-[#3A3A3A] leading-[24px] w-[207px]"
                 >
                     You can buy token without paying any transaction fee
                 </Typography>
@@ -46,12 +46,12 @@ export const WhyUs: FC<WhyUsProps> = () => {
             <div className="w-[350px] h-[400px] bg-[#f7f7fc] p-5 rounded-xl flex flex-col items-start justify-center gap-3">
                 <SecurityIcon />
                 <Typography
-                    className="text-sm font-semibold lg:text-[30px] text-[#3A3A3A] leading-[47px] w-[304px]"
+                    className="text-[28px]  font-semibold lg:text-[30px] text-[#3A3A3A] leading-[47px] w-[304px]"
                 >
                     Security and control over money
                 </Typography>
                 <Typography
-                    className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] leading-[24px] w-[207px]"
+                    className="font-normal lg:text-[16px] text-[#3A3A3A] leading-[24px] w-[207px]"
                 >
                     We provide high levels of security for all users
                 </Typography>
