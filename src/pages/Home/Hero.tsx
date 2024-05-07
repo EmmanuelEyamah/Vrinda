@@ -15,6 +15,10 @@ import StarIcon from "../../components/Ui/svg/star";
 import StLineIcon from "../../components/Ui/svg/stline";
 import StLineIIIcon from "../../components/Ui/svg/stline2";
 import { ArrowUpOutlined } from '@ant-design/icons';
+import LiETHII from "../../components/Ui/svg/li-eth2";
+import USDTIcon from "../../components/Ui/svg/usdt";
+import CardIcon from "../../components/Ui/svg/card";
+import EthIconBox from "../../components/Ui/svg/eth-icon";
 
 interface Timing {
   days?: number;
@@ -28,9 +32,9 @@ export const Hero: FC<HeroProps> = () => {
   const [selectedBtn, setSelectedBtn] = useState('eth');
   
   const buttons = [
-    { id: 1, label: 'ETH', value: 'eth' },
-    { id: 2, label: 'USDT', value: 'usdt' },
-    { id: 3, label: 'CARD', value: 'card' },
+    { id: 1, label: 'ETH', value: 'eth', icon: <EthIconBox /> },
+    { id: 2, label: 'USDT', value: 'usdt', icon: <USDTIcon /> },
+    { id: 3, label: 'CARD', value: 'card', icon: <CardIcon /> },
   ];
 
   const handleBtnClick = (value: string) => {
@@ -66,13 +70,16 @@ export const Hero: FC<HeroProps> = () => {
 
   return (
     <div className="relative mx-auto h-[1700px] lg:min-h-[1300px] container">
-      <div className="absolute top-0 right-[50%] hidden lg:block">
+      <div className="absolute top-7 lg:top-0 right-[50%]  lg:block">
         <StarIcon />
       </div>
-      <div className="absolute top-[50px] right-[50%] hidden lg:block ">
+      <div className="absolute left-[50%] lg:top-[50px] lg:right-[50%] lg:block ">
         <StLineIcon />
       </div>
       <div className="absolute top-[10%] right-[60%] hidden lg:block ">
+        <StLineIIIcon />
+      </div>
+      <div className="absolute top-[2%] right-[50%] lg:right-[60%]  lg:hidden ">
         <StLineIIIcon />
       </div>
       <div className="absolute top-[0px] right-[-60px] z-[100] hidden lg:block ">
@@ -84,13 +91,19 @@ export const Hero: FC<HeroProps> = () => {
       <div className="absolute lg:bottom-[900px] lg:left-[50px] hidden lg:block ">
         <EthIcon />
       </div>
+      <div className="absolute bottom-[70%] left-[50px] lg:hidden">
+        <LiETHII />
+      </div>
+     
       <div className="pt-20 flex-col items-start justify-center lg:flex lg:flex-row gap-32 lg:px-5 lg:pt-[150px]">
           <div className="flex-col w-full lg:w-1/2 items-center justify-center gap-4">
-            <Typography 
-                className="font-bold text-center w-[401px] lg:text-left text-[38px] lg:text-[58px] mb-1 lg:mb-4 text-[#3A3A3A] lg:w-[759px] leading-[47px] lg:leading-[79px]"
-            >
-                Welcome to the future of cryptocurrency with Vrinda Coin!
-            </Typography>
+            <div className="w-full flex items-center justify-center">
+              <Typography 
+                  className="font-bold text-center w-[301px] lg:text-left text-[38px] lg:text-[58px] mb-1 lg:mb-4 text-[#3A3A3A] lg:w-[759px] leading-[47px] lg:leading-[79px]"
+              >
+                  Welcome to the future of cryptocurrency with Vrinda Coin!
+              </Typography>
+            </div>
             <Typography 
                 className="text-center text-[28px]  lg:text-left lg:text-[48px] mb-1 lg:mb-4 text-[#3754FF] leading-[36px] lg:leading-[47px] font-normal"
             >
@@ -103,7 +116,7 @@ export const Hero: FC<HeroProps> = () => {
             </Typography>
             <Space className="mt-10 items-center justify-center lg:items-start lg:justify-start flex flex-col lg:flex lg:flex-row">
               <div className=" w-[320px] lg:w-[350px]">
-                <Input label="Email/Phone Number" crossOrigin={undefined} size="lg" className="p-5"/>
+                <Input label="Email/Phone Number" crossOrigin={undefined} size="lg" className="p-5 bg-[#F7F7FC]"/>
                 <Typography 
                     className="text-sm font-normal lg:text-left text-center lg:text-[12px] mb-1 lg:mb-4 text-[#3A3A3A] w-[307px] lg:w-[444px] leading-[18px]"
                 >
@@ -115,7 +128,7 @@ export const Hero: FC<HeroProps> = () => {
               </AppButton>
             </Space>
           </div>
-          <div className="flex-col w-full lg:w-1/2 items-center justify-center gap-4 px-5 mt-5 lg:mt-0 lg:px-5">
+          <div className="flex-col w-full lg:w-1/2 items-center justify-center gap-4 px-5 mt-[100px] lg:mt-0 lg:px-5">
             <Card className="w-full lg:max-w-[42rem] shadow-lg shadow-custom h-[805px] lg:h-[775px] bg-[#F7F7FC]">
               <CardBody>
                 <Typography
@@ -197,7 +210,10 @@ export const Hero: FC<HeroProps> = () => {
                         } text-[#3A3A3A] font-normal text-[16px] leading-[24px]  py-2 px-4 rounded w-[130px]`}
                         onClick={() => handleBtnClick(button.value)}
                       >
-                        {button.label}
+                        <Space>
+                          {button.icon}
+                          {button.label}
+                        </Space>
                       </button>
                     ))}
                   </div>

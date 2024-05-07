@@ -1,3 +1,5 @@
+@import url("/assets/fonts/font.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,5 +18,3 @@
     box-shadow: 0px 20px 40px linear-gradient(265.03deg, #8D44D7 8.2%, #2335A3 76.67%);
 }
 
-
-@import url("/public/assets/fonts/font.css");

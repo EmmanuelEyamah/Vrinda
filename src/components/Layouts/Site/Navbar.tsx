@@ -18,6 +18,7 @@ import MenuBarIcon from "../../Ui/svg/menubar";
 import NavbarBG from "../../Ui/svg/navbarBG";
 import { motion } from 'framer-motion';
 import CloseBarIcon from "../../Ui/svg/closebar";
+import { Space } from "antd";
 
 const Links = [
   {
@@ -263,7 +264,7 @@ export const SiteNavbar: FC<SiteNavbarProps> = () => {
             </AppButton>
           </div>
 
-          <div className="lg:hidden">
+          <Space size={18} className="lg:hidden">
             <AppButton variant="secondary">
               Sign up
             </AppButton>
@@ -278,7 +279,7 @@ export const SiteNavbar: FC<SiteNavbarProps> = () => {
                 <MenuBarIcon />
               )}
             </IconButton>
-          </div>
+          </Space>
         </div>
       </Navbar>
     </>

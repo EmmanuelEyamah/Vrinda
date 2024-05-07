@@ -20,7 +20,7 @@ const config = {
         bold: ['Sofia Pro Bold'],
         black: ['Sofia Pro Black'],
       },
-    },
+    },  
   },
   plugins: [],
 };
