@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Hero } from "./Hero";
-import { MarKetcap } from "./MarketCap";
+import { MarKetCap } from "./MarketCap";
 import { Featured } from "./Featured";
 import { WhyUs } from "./WhyUs";
 import { Tokenomics } from "./tokenomics";
@@ -18,7 +18,7 @@ export const Home: FC<HomeProps> = () => {
   return (
     <div>
         <Hero />
-        <MarKetcap />
+        <MarKetCap />
         <Featured />
         <WhyUs />
         <Tokenomics />
