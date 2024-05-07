@@ -1,4 +1,4 @@
-@import url("/assets/fonts/font.css");
+@import url("/public/assets/fonts/font.css");
 
 @tailwind base;
 @tailwind components;
@@ -18,3 +18,18 @@
     box-shadow: 0px 20px 40px linear-gradient(265.03deg, #8D44D7 8.2%, #2335A3 76.67%);
 }
 
+.font-sans {
+    font-family: Sofia Pro Medium !important;
+}
+
+html, :host {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: Sofia Pro Regular; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}

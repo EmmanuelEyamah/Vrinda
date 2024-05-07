@@ -2,7 +2,7 @@
     font-family: 'Sofia Pro Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Sofia Pro Regular'), url('Sofia Pro Regular Az.woff') format('woff');
+    src: local('Sofia Pro Regular'), url('/assets/fonts/Sofia Pro Regular Az.woff') format('woff');
     }
     
 
@@ -10,7 +10,7 @@
     font-family: 'Sofia Pro ExtraLight';
     font-style: normal;
     font-weight: normal;
-    src: local('Sofia Pro ExtraLight'), url('Sofia Pro ExtraLight Az.woff') format('woff');
+    src: local('Sofia Pro ExtraLight'), url('/assets/fonts/Sofia Pro ExtraLight Az.woff') format('woff');
     }
     
 
@@ -18,14 +18,14 @@
     font-family: 'Sofia Pro UltraLight';
     font-style: normal;
     font-weight: normal;
-    src: local('Sofia Pro UltraLight'), url('Sofia Pro UltraLight Az.woff') format('woff');
+    src: local('Sofia Pro UltraLight'), url('/assets/fonts/Sofia Pro UltraLight Az.woff') format('woff');
     }
 
     @font-face {
     font-family: 'Sofia Pro Light';
     font-style: normal;
     font-weight: normal;
-    src: local('Sofia Pro Light'), url('Sofia Pro Light Az.woff') format('woff');
+    src: local('Sofia Pro Light'), url('/assets/fonts/Sofia Pro Light Az.woff') format('woff');
     }
     
 
@@ -33,14 +33,14 @@
     font-family: 'Sofia Pro Medium';
     font-style: normal;
     font-weight: normal;
-    src: local('Sofia Pro Medium'), url('Sofia Pro Medium Az.woff') format('woff');
+    src: local('Sofia Pro Medium'), url('/assets/fonts/Sofia Pro Medium Az.woff') format('woff');
     }
 
     @font-face {
     font-family: 'Sofia Pro SemiBold';
     font-style: normal;
     font-weight: normal;
-    src: local('Sofia Pro SemiBold'), url('Sofia Pro Semi Bold Az.woff') format('woff');
+    src: local('Sofia Pro SemiBold'), url('/assets/fonts/Sofia Pro Semi Bold Az.woff') format('woff');
     }
     
 
@@ -48,7 +48,7 @@
     font-family: 'Sofia Pro Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Sofia Pro Bold'), url('Sofia Pro Bold Az.woff') format('woff');
+    src: local('Sofia Pro Bold'), url('/assets/fonts/Sofia Pro Bold Az.woff') format('woff');
     }
     
 
@@ -56,5 +56,5 @@
     font-family: 'Sofia Pro Black';
     font-style: normal;
     font-weight: normal;
-    src: local('Sofia Pro Black'), url('Sofia Pro Black Az.woff') format('woff');
+    src: local('Sofia Pro Black'), url('/assets/fonts/Sofia Pro Black Az.woff') format('woff');
     }

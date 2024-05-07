@@ -213,7 +213,7 @@ export const SiteNavbar: FC<SiteNavbarProps> = () => {
   return (
     <>
       <div className="bg-gradient-to-r from-[#5A6FEA] to-[#213299] w-full h-[55px] flex items-center justify-center p-2 gap-2 relative">
-        <Typography variant="h6" className="text-white">VRANDA is now live!</Typography>
+        <Typography variant="h6" className="text-white">VRIANDA is now live!</Typography>
         <AppButton variant="accent" size="sm">Get involved</AppButton>
       </div>
       <motion.div

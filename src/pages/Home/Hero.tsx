@@ -69,7 +69,7 @@ export const Hero: FC<HeroProps> = () => {
   });
 
   return (
-    <div className="relative mx-auto h-[1700px] lg:min-h-[1300px] container">
+    <div className="relative mx-auto lg:min-h-[1300px] container">
       <div className="absolute top-7 lg:top-0 right-[50%]  lg:block">
         <StarIcon />
       </div>
@@ -85,10 +85,10 @@ export const Hero: FC<HeroProps> = () => {
       <div className="absolute top-[0px] right-[-60px] z-[100] hidden lg:block ">
         <EthIcon />
       </div>
-      <div className="absolute lg:bottom-[800px] lg:right-[530px] z-30 hidden lg:block " >
+      <div className="absolute lg:bottom-[300px] lg:right-[530px] z-30 hidden lg:block " >
         <BitCoinIcon />
       </div>
-      <div className="absolute lg:bottom-[900px] lg:left-[50px] hidden lg:block ">
+      <div className="absolute lg:bottom-[400px] lg:left-[50px] hidden lg:block ">
         <EthIcon />
       </div>
       <div className="absolute bottom-[70%] left-[50px] lg:hidden">
@@ -120,7 +120,7 @@ export const Hero: FC<HeroProps> = () => {
                 <Typography 
                     className="text-sm font-normal lg:text-left text-center lg:text-[12px] mb-1 lg:mb-4 text-[#3A3A3A] w-[307px] lg:w-[444px] leading-[18px]"
                 >
-                    Swap Crypto & Tokens on Vridacoin for free
+                    Swap Crypto & Tokens on Vrinda-coin for free
                 </Typography>
               </div>
               <AppButton variant="secondary" size="lg">
