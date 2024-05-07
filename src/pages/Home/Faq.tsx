@@ -30,7 +30,7 @@ export const FAQ: FC<FAQProps> = () => {
     ];
 
   return (
-    <div className="relative w-full bg-gradient-to-b from-[#F7F7FC] to-[#FFFFFF] h-[1000px] lg:h-[700px] flex items-start flex-col justify-normal container mx-auto">
+    <div className="relative w-full h-[1000px] lg:h-[700px] flex items-start flex-col justify-normal container mx-auto">
         <div className="absolute top-[-127px] z-[-1] left-0 hidden lg:block">
             <PatternBG />
         </div>
@@ -38,7 +38,7 @@ export const FAQ: FC<FAQProps> = () => {
             <MPatternBG />
         </div>
 
-        <div className="p-2 lg:p-5 absolute top-[-20px] lg:top-[-90px]">
+        <div className="p-2 lg:p-5 absolute top-[-15px] lg:top-[-90px]">
             <div className="w-[510px] flex items-center justify-start gap-2">
                 <div className="w-[50px] lg:w-[140px] h-1 bg-[#3754FF]"></div>
                 <Typography
@@ -54,8 +54,8 @@ export const FAQ: FC<FAQProps> = () => {
             </Typography>
         </div>
 
-        <div className="w-full flex flex-col lg:flex lg:flex-row items-start gap-8 mt-24">
-            <div className="w-1/2 flex flex-col gap-5 p-4 lg:p-20">
+        <div className="w-full flex flex-col lg:flex lg:flex-row items-start justify-start gap-8 mt-20 lg:mt-4">
+            <div className=" w-full lg:w-[800px] h-full lg:h-[650px] flex flex-col gap-5 p-4 lg:p-10">
                 <div className="w-[500px] lg:w-full flex items-center gap-6">
                     {buttons.map(button => (
                         <button
@@ -70,7 +70,7 @@ export const FAQ: FC<FAQProps> = () => {
                     ))}
                 </div>
 
-                <div className="mt-5 w-[360px] lg:w-[530px]">
+                <div className="mt-5 w-[360px] lg:w-[680px]">
                     { selectedBtn === "general" &&  (
                         <AccordionComponent items={items}/>
                     )}

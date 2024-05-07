@@ -69,7 +69,7 @@ export const Hero: FC<HeroProps> = () => {
   });
 
   return (
-    <div className="relative mx-auto lg:min-h-[1150px] container">
+    <div className="relative mx-auto h-[1550px] lg:h-[1150px] container">
       <div className="absolute top-7 lg:top-0 right-[50%]  lg:block">
         <StarIcon />
       </div>
@@ -91,7 +91,7 @@ export const Hero: FC<HeroProps> = () => {
       <div className="absolute lg:bottom-[260px] lg:left-[150px] hidden lg:block ">
         <EthIcon />
       </div>
-      <div className="absolute bottom-[70%] left-[50px] lg:hidden">
+      <div className="absolute bottom-[63%] left-[50px] lg:hidden">
         <LiETHII />
       </div>
      

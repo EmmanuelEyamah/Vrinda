@@ -13,7 +13,7 @@ export const Stages: FC<StagesProps> = () => {
         <div className="absolute left-[-40px] top-0 z-10">
             <StripPattern />
         </div>
-        <div className="w-full lg:w-[1316px] h-[00px] lg:h-[597px] rounded-2xl bg-[#3754FF] z-20 p-10 flex flex-col lg:flex lg:flex-row items-start">
+        <div className="w-full lg:w-[1316px] h-[700px] lg:h-[597px] rounded-2xl bg-[#3754FF] z-20 p-10 flex flex-col lg:flex lg:flex-row items-start">
             <div className="flex flex-col gap-10 w-1/2">
                 <div className="w-full">
                     <Space size={0} className="w-full">
