@@ -69,7 +69,7 @@ export const Hero: FC<HeroProps> = () => {
   });
 
   return (
-    <div className="relative mx-auto lg:min-h-[1300px] container">
+    <div className="relative mx-auto lg:min-h-[1150px] container">
       <div className="absolute top-7 lg:top-0 right-[50%]  lg:block">
         <StarIcon />
       </div>
@@ -85,10 +85,10 @@ export const Hero: FC<HeroProps> = () => {
       <div className="absolute top-[0px] right-[-60px] z-[100] hidden lg:block ">
         <EthIcon />
       </div>
-      <div className="absolute lg:bottom-[300px] lg:right-[530px] z-30 hidden lg:block " >
+      <div className="absolute lg:bottom-[210px] lg:right-[530px] z-30 hidden lg:block " >
         <BitCoinIcon />
       </div>
-      <div className="absolute lg:bottom-[400px] lg:left-[50px] hidden lg:block ">
+      <div className="absolute lg:bottom-[260px] lg:left-[150px] hidden lg:block ">
         <EthIcon />
       </div>
       <div className="absolute bottom-[70%] left-[50px] lg:hidden">

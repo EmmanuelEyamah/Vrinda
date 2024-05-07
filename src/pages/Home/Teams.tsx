@@ -9,7 +9,7 @@ export interface TeamsProps {}
 export const Teams: FC<TeamsProps> = () => {
 
   return (
-    <div className="w-full flex flex-col items-center justify-start relative gap-5 lg:gap-7 h-[2300px] lg:h-[1600px] container mx-auto">
+    <div className="w-full flex flex-col items-center justify-start relative gap-5 lg:gap-7 h-[2300px] lg:h-[1800px] container mx-auto">
         <Typography
             className="text-[28px] font-bold lg:text-[28px] text-[#3754FF] leading-[24px] lg:leading-[36px] lg:w-[198px]"
         >
