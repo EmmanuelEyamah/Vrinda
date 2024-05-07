@@ -47,7 +47,7 @@ export const Blogs: FC<BlogsProps> = () => {
 
       <div className="w-full h-[4000px] pt-52 p-6 lg:px-32 flex-col flex lg:flex lg:flex-row items-center justify-center gap-16">
         <div className="w-full lg:w-[60%] h-full flex flex-col items-start gap-10">
-          <div className="w-[368px] lg:w-[670px] h-[801px] lg:h-[426px] bg-[#F7F7FC] rounded-2xl p-9 flex-col flex lg:flex lg:flex-row gap-4">
+          <div className="w-[368px] lg:w-[670px] h-[811px] lg:h-[426px] bg-[#F7F7FC] rounded-2xl p-5 flex-col flex lg:flex lg:flex-row gap-4">
             <div className="w-full lg:w-1/2 h-full">
               <img src="assets/blog3.png"/>
             </div>
@@ -79,7 +79,7 @@ export const Blogs: FC<BlogsProps> = () => {
                 </Space>
               </div>
               <Typography
-                  className="text-[21px] font-semibold lg:text-[28px] text-[#3A3A3A] w-[289px] lg:w-[371px] leading-[27px] lg:leading-[36px]"
+                  className="text-[21px] font-semibold lg:text-[28px] text-[#3A3A3A] w-[289px] lg:w-[321px] leading-[27px] lg:leading-[36px]"
               >
                 The Power of Blockchain don't Miss Out on Our ICO
               </Typography>
@@ -89,7 +89,7 @@ export const Blogs: FC<BlogsProps> = () => {
                 Our ICO is not just about financial gains; it's about being part of a movement that is shaping the future. By investing in our ICO, you become an integral part of a community that believes in the power..
               </Typography>
 
-              <div className="flex w-full items-center justify-between mt-6">
+              <div className="flex w-full items-center gap-4 justify-center mt-2">
                 <Space>
                   <img src="assets/user.png" alt="profile-image"/>
                   <Typography
@@ -110,7 +110,7 @@ export const Blogs: FC<BlogsProps> = () => {
               </div>
             </div>
           </div>
-          <div className="w-[368px] lg:w-[670px] h-[801px] lg:h-[426px] bg-[#F7F7FC] rounded-2xl p-9 flex-col flex lg:flex lg:flex-row gap-4">
+          <div className="w-[368px] lg:w-[670px] h-[801px] lg:h-[426px] bg-[#F7F7FC] rounded-2xl p-5 flex-col flex lg:flex lg:flex-row gap-4">
             <div className="w-full lg:w-1/2 h-full">
               <img src="assets/blog2.png"/>
             </div>
@@ -142,7 +142,7 @@ export const Blogs: FC<BlogsProps> = () => {
                 </Space>
               </div>
               <Typography
-                  className="text-[21px] font-semibold lg:text-[28px] text-[#3A3A3A] w-[289px] lg:w-[371px] leading-[27px] lg:leading-[36px]"
+                  className="text-[21px] font-semibold lg:text-[28px] text-[#3A3A3A] w-[289px] lg:w-[321px] leading-[27px] lg:leading-[36px]"
               >
                 The Power of Blockchain don't Miss Out on Our ICO
               </Typography>
@@ -152,7 +152,7 @@ export const Blogs: FC<BlogsProps> = () => {
                 Our ICO is not just about financial gains; it's about being part of a movement that is shaping the future. By investing in our ICO, you become an integral part of a community that believes in the power..
               </Typography>
 
-              <div className="flex w-full items-center justify-between mt-6">
+              <div className="flex w-full items-center gap-4 justify-center mt-2">
                 <Space>
                   <img src="assets/user.png" alt="profile-image"/>
                   <Typography

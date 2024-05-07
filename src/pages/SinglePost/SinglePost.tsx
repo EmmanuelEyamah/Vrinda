@@ -1,9 +1,9 @@
-import { Breadcrumbs, Input, Typography } from "@material-tailwind/react";
+import { Breadcrumbs, Checkbox, Input, Textarea, Typography } from "@material-tailwind/react";
 import { FC } from "react";
 import OutlinedNote from "../../components/Ui/svg/outlineNote";
 import OutlineMessage from "../../components/Ui/svg/outlineMessage";
 import OutlinedWifi from "../../components/Ui/svg/wifi";
-import { Space } from "antd";
+import { Divider, Space } from "antd";
 import LiTimeIcon from "../../components/Ui/svg/li-time";
 import LiMessageIcon from "../../components/Ui/svg/li-message";
 import LiEyeIcon from "../../components/Ui/svg/li-eye";
@@ -13,6 +13,7 @@ import TwitterIcon from "../../components/Ui/svg/twitter";
 import DiscordIcon from "../../components/Ui/svg/discord";
 import TelegramIcon from "../../components/Ui/svg/telegram";
 import { NavLink } from "react-router-dom";
+import { AppButton } from "../../components/Ui/Button/Button";
 
 export interface BlogsProps {}
 export const SinglePost: FC<BlogsProps> = () => {
@@ -52,16 +53,16 @@ export const SinglePost: FC<BlogsProps> = () => {
         </div>
       </div>
 
-      <div className="w-full h-[2200px] pt-52 p-6 lg:px-32 flex items-center justify-center gap-16">
-        <div className="w-full lg:w-[60%] h-full flex flex-col items-start gap-10">
-          <div className="w-[368px] lg:w-[703px] rounded-2xl p-9 flex flex-col gap-4">
+      <div className="w-full h-full pt-52 px-0  lg:px-25 flex items-start justify-start gap-16">
+        <div className="w-full lg:w-[60%] h-full flex flex-col items-start gap-12">
+          <div className="w-full lg:w-[703px] rounded-2xl p-9 flex flex-col gap-4">
             <div className="w-full h-full">
               <img src="/assets/blog1.png"/>
             </div>
-            <div className="w-full lg:w-1/2 flex flex-col gap-7">
+            <div className="w-full flex flex-col gap-7">
               <div className=" flex gap-3">
                   <Space className="hidden lg:block">
-                  <img src="/assets/user.png" alt="profile-image"/>
+                    <img src="/assets/user.png" alt="profile-image"/>
                   <Typography
                       className="text-sm font-semibold lg:text-[16px] text-[#3A3A3A] leading-[24px]"
                   >
@@ -108,7 +109,7 @@ export const SinglePost: FC<BlogsProps> = () => {
               </Typography>
 
               <Typography
-                  className="text-[21px] font-semibold lg:text-[28px] text-[#3A3A3A] w-[289px] lg:w-[698px] leading-[27px] lg:leading-[36px]"
+                  className="text-[21px] font-semibold lg:text-[25px] text-[#3A3A3A] w-[269px] lg:w-[698px] leading-[27px] lg:leading-[36px]"
               >
                 There are no secrets to success. It is the result of preparation, hard work, and learning from failure.
               </Typography>
@@ -117,8 +118,136 @@ export const SinglePost: FC<BlogsProps> = () => {
                    <img src="/assets/blog6.png"/>
                 </div>
 
-              <div className="flex w-full items-center justify-between mt-6">
-                
+                <Typography
+                  className="text-sm font-normal lg:text-[16px] text-[#3A3A3A] w-[322px] lg:w-[621px] leading-[24px]"
+                >
+                  Join us as we delve into the journeys of these trailblazing projects, from the initial idea to the successful ICO and beyond. Gain insights into the strategies they employed, the challenges they overcame, and the lessons they learned along the way. ICO success stories are not just about financial gains but also about the transformative impact these projects have had on various sectors. If you're curious about the potential of ICOs. <br />
+                  We explore a diverse range of projects that have thrived after launching their ICOs, disrupting traditional industries and paving the way for revolutionary solutions. From decentralized applications (DApps) that have reshaped digital ecosystems to blockchain platforms revolutionizing supply chain management, these success stories demonstrate the power of ICOs to propel ideas into reality. <br />
+                  Through in-depth case studies and interviews with project leaders, we offer insights into the challenges they faced, the strategies they employed, and the lessons they learned along the way. Whether you're an investor seeking inspiration or an entrepreneur entrepreneur considering an ICO, these stories.
+                </Typography>
+
+                <Space>
+                <div className="w-full p-3 h-[44px] border rounded-md text-[rgba(58, 58, 58, 0.5)] text-[16px] leading-[24px] font-normal">
+                  Blockchain
+                </div>
+                <div className="w-full p-3 h-[44px] border rounded-md text-[rgba(58, 58, 58, 0.5)] text-[16px] leading-[24px] font-normal">
+                  Cryptocurrency
+                </div>
+                <div className="w-full p-3 h-[44px] border rounded-md text-[rgba(58, 58, 58, 0.5)] text-[16px] leading-[24px] font-normal">
+                  ICO
+                </div>
+              </Space>
+
+              <Divider></Divider>
+
+              <div className="flex w-full lg:w-[750px] h-[350px] lg:h-[260px] p-7 rounded-2xl mt-6 bg-[#F7F7FC]">
+                <div className="flex  flex-col lg:flex lg:flex-row  items-start lg:items-center justify-center gap-3">
+                   <img src="/assets/user.png" alt="profile-image" className="w-1/2 h-1/2 object-cover"/>
+                   <Space direction="vertical">
+                    <Typography
+                      className="text-[16px] font-normal lg:text-[21px] text-[#3A3A3A] w-[289px] lg:w-[598px] leading-[21px] lg:leading-[27px]"
+                    >
+                      About Hashim Beckley
+                    </Typography>
+                    <Typography
+                      className="text-[14px] font-normal text-[#3A3A3A] w-[299px] lg:w-[572px] leading-[24px]"
+                    >
+                      The Founder and Creative Director of VRINDACOIN, a digital creative studio in USA, has over 15 years of experience as an award-winning Creative Director/Art for clients.
+                    </Typography>
+                   </Space>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-start w-[800px] gap-7 mt-28">
+                <Typography
+                  className="text-[16px] font-bold lg:text-[28px] text-[#3A3A3A] w-[289px] lg:w-[598px] leading-[21px] lg:leading-[36px]"
+                >
+                  Comments 02
+                </Typography>
+
+                <div className="flex items-start justify-start gap-2">
+                  <img src="/assets/user.png" alt="profile-image" className="w-1/2 h-1/2  object-cover"/>
+                  <Space direction="vertical">
+                   <Typography
+                      className="text-[16px] font-normal lg:text-[21px] text-[#3A3A3A] w-[289px] lg:w-[598px] leading-[21px] lg:leading-[27px]"
+                    >
+                      Hashim Alghaly
+                    </Typography>
+                     <Typography
+                      className="text-[16px] font-normal text-[#3A3A3A] leading-[21px]"
+                    >
+                      March 2, 2024
+                     </Typography>
+                     <Typography
+                      className="text-[16px] font-normal text-[#3A3A3A] w-[209px] lg:w-[598px] leading-[21px]"
+                    >
+                      The platform itself was incredibly user-friendly, making it easy for me to participate in the ICO. The intuitive interface guided me through the token purchase process seamlessly.
+                    </Typography>
+
+                  </Space>
+                </div>
+                <div className="flex items-start justify-start gap-2">
+                  <img src="/assets/user2.png" alt="profile-image" className="w-1/2 h-1/2 object-cover"/>
+                  <Space direction="vertical">
+                   <Typography
+                      className="text-[16px] font-normal lg:text-[21px] text-[#3A3A3A] w-[289px] lg:w-[598px] leading-[21px] lg:leading-[27px]"
+                    >
+                      Habib Hassan
+                    </Typography>
+                     <Typography
+                      className="text-[16px] font-normal text-[#3A3A3A] leading-[21px]"
+                    >
+                      March 2, 2024
+                     </Typography>
+                     <Typography
+                      className="text-[16px] font-normal text-[#3A3A3A] w-[209px] lg:w-[598px] leading-[21px]"
+                    >
+                      The platform itself was incredibly user-friendly, making it easy for me to participate in the ICO. The intuitive interface guided me through the token purchase process seamlessly.
+                    </Typography>
+
+                  </Space>
+                </div>
+
+                <Space direction="vertical" className="mt-20">
+                  <Typography
+                    className="text-[16px] font-bold lg:text-[28px] text-[#3A3A3A] w-[289px] lg:w-[598px] leading-[21px] lg:leading-[36px]"
+                  >
+                    Leave a Reply
+                  </Typography>
+                  <Typography
+                    className="text-[16px] font-normal text-[#3A3A3AB2] w-[289px] lg:w-[598px] leading-[21px]"
+                  >
+                    Your email address will not be published. Required fields are marked *
+                  </Typography>
+                </Space>
+
+                <div className="mt-6 w-[350px] lg:w-full">
+                  <form className="flex flex-col gap-7 items-start w-full">
+                    <div className="w-full lg:w-1/2">
+                      <Input label="Name" crossOrigin={undefined} size="lg"/>
+                    </div>
+                    <div className="w-full lg:w-1/2">
+                      <Input label="Email Address" crossOrigin={undefined} size="lg"/>
+                    </div>
+                    <div className="w-full">
+                      <Textarea label="Comment" size="lg"/>
+                      <Space size={0}>
+                        <Checkbox color="blue" crossOrigin={undefined}/>
+                        <Typography
+                          className="text-[16px] font-normal text-[#3A3A3AB2] w-[289px] lg:w-[598px] leading-[21px]"
+                        >
+                          Save my name, email in this browser for the next time i comment.
+                        </Typography>
+                      </Space>
+                    </div>
+
+                    <div className="">
+                      <AppButton size="lg" variant="secondary">
+                        Submit your message
+                      </AppButton>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
